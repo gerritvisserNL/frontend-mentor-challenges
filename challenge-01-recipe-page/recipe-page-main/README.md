@@ -17,7 +17,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://www.gerritvisser.nl/frontendmentor/challenges/1-recipe-page)
+- Live Site URL: [Add live site URL here](https://www.gerritvisser.nl/frontendmentor/challenges/01-recipe-page)
 
 ## My process
 
