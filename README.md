@@ -16,7 +16,7 @@ This repository tracks my progress, solutions, and learnings.
 
 ## 🚀 Challenges Overview
 
-| 01 | [Recipe Page](https://www.frontendmentor.io/challenges) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/01-recipe-page) | [Code](./challenge-01-recipe-page)
+| 01 | [Recipe Page](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/01-recipe-page) | [Code](./challenge-01-recipe-page)
 
 ## 🛠️ Tech Stack
 
