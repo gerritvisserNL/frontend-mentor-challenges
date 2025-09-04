@@ -17,6 +17,8 @@ This repository tracks my progress, solutions, and learnings.
 ## 🚀 Challenges Overview
 
 | 01 | [Recipe Page](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/01-recipe-page) | [Code](./challenge-01-recipe-page)
+| 02 | [Social Links Profile](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/02-social-links-profile) | [Code](./challenge-02-social-links-profile)
+| 03 | [Blog Preview Card](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/03-blog-preview-card) | [Code](./challenge-03-blog-preview-card)
 
 ## 🛠️ Tech Stack
 
@@ -28,8 +30,8 @@ This repository tracks my progress, solutions, and learnings.
 
 ## 📈 Progress
 
-- ✅ Completed: 1 / 60
-- 🔄 In progress: 0
+- ✅ Completed: 3 / 60
+- 🔄 In progress: 1
 - 🎯 Goal: Finish all 60 challenges
 
 ---
