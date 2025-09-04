@@ -33,6 +33,8 @@ Defer: <script src="script.js" defer></script>
 
 defer makes an external script execute only after the HTML is fully parsed, while the script is downloaded during parsing. This way, it doesn’t block page rendering and you can safely access HTML elements in the script.
 
+In the FAQ example, :last-child did not work as expected because the last element inside the <dl> was a <dd> rather than a <dt>. As a result, the last question button was not selected. The correct solution is to use :last-of-type, which specifically targets the final <dt> and removes the border from its button.
+
 ## Author
 
 - Website - [Gerrit Visser](https://www.gerritvisser.nl)

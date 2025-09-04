@@ -1,0 +1,89 @@
+:root {
+  --white: hsl(0, 100%, 100%);
+  --purple-100: hsl(275, 100%, 97%);
+  --purple-600: hsl(292, 16%, 49%);
+  --purple-950: hsl(292, 42%, 14%);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--purple-100);
+  font-family: "Work Sans", sans-serif;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  margin: -6rem auto 0;
+  width: 85%;
+  height: auto;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+header img {
+  width: 2rem;
+  height: auto;
+}
+
+dl,
+dd,
+dt {
+  background-color: var(--white);
+}
+
+.faq button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+  color: var(--purple-950);
+  font-weight: 600;
+  line-height: 1.25rem;
+  width: 100%;
+  border-style: none;
+  border-top: 1px solid var(--purple-100);
+  padding: 1rem 0;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.faq dt:first-of-type button {
+  border-top: none;
+  padding-top: 0;
+}
+
+.faq img {
+  margin-left: 1rem;
+}
+
+dd {
+  color: var(--purple-600);
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 1440px) {
+}
