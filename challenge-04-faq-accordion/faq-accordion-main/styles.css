@@ -20,6 +20,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("./assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
 }
 
 .faq-container {
@@ -28,18 +30,19 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--white);
-  margin: -6rem auto 0;
+  margin: 8rem auto 2rem;
   width: 85%;
   height: auto;
   border-radius: 0.75rem;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0;
+  max-width: 500px;
 }
 
 header {
   display: flex;
   align-items: center;
   width: 100%;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -70,6 +73,11 @@ dt {
   font-size: 1rem;
 }
 
+.faq button:hover {
+  color: var(--purple-600);
+  cursor: pointer;
+}
+
 .faq dt:first-of-type button {
   border-top: none;
   padding-top: 0;
@@ -85,5 +93,13 @@ dd {
   font-size: 0.85rem;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 376px) {
+  .container {
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-position: center top;
+  }
+
+  .faq-container {
+    margin-top: 13.5rem;
+  }
 }
