@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --white: hsl(0, 100%, 100%);
   --purple-100: hsl(275, 100%, 97%);
