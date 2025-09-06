@@ -13,31 +13,59 @@
 
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body>
     <div class="container">
-      <div class="inner-container">
-        <div class="result">
+      <main class="inner-container">
+        <section class="result">
           <h2>Your Result</h2>
-          <div class="score">76 of 100</div>
-          <h3>Great</h3>
+          <p class="average-score"><span>76</span> of 100</p>
+          <p class="grade">Great</p>
           <p class="comments">
             You scored higher than 65% of the people who have taken these tests.
           </p>
-        </div>
-        <div class="summary">
-          <h2">Summary</h2>
-          <div class="reaction">Reaction 80 / 100</div>
-          <div class="memory">Memory 92 / 100</div>
-          <div class="verbal">Verbal 61 / 100</div>
-          <div class="visual">Visual 72 / 100</div>
-
-          <button>Continue</button>
-        </div>
-      </div>
+        </section>
+        <section class="summary">
+          <h2>Summary</h2>
+          <ul>
+            <li class="reaction">
+              <img
+                src="assets/images/icon-reaction.svg"
+                alt="Reaction icon"
+              /><span class="label">Reaction</span>
+              <span class="score"> 80 / 100</span>
+            </li>
+            <li class="memory">
+              <img src="assets/images/icon-memory.svg" alt="Memory icon" /><span
+                class="label"
+                >Memory</span
+              >
+              <span class="score"> 92 / 100</span>
+            </li>
+            <li class="verbal">
+              <img src="assets/images/icon-verbal.svg" alt="Verbal icon" /><span
+                class="label"
+                >Verbal</span
+              >
+              <span class="score"> 61 / 100</span>
+            </li>
+            <li class="visual">
+              <img src="assets/images/icon-visual.svg" alt="visual icon" /><span
+                class="label"
+                >Visual</span
+              >
+              <span class="score">72 / 100</span>
+            </li>
+          </ul>
+          <button type="button">Continue</button>
+        </section>
+      </main>
     </div>
   </body>
 </html>
