@@ -16,12 +16,12 @@ This repository tracks my progress, solutions, and learnings.
 
 ## 🚀 Challenges Overview
 
-| 01 | [Recipe Page](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/01-recipe-page) | [Code](./challenge-01-recipe-page)
-| 02 | [Social Links Profile](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/02-social-links-profile) | [Code](./challenge-02-social-links-profile)
-| 03 | [Blog Preview Card](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/03-blog-preview-card) | [Code](./challenge-03-blog-preview-card)
-| 04 | [FAQ Accordion](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/04-faq-accordion) | [Code](./challenge-04-faq-accordion)
-| 05 | [Results Summary Component](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/05-results-summary-component) | [Code](./challenge-05-results-summary-component)
-| 06 | [Results Summary Component](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/06-product-preview-card-component) | [Code](./challenge-06-product-preview-card-component)
+- | 01 | [Recipe Page](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/01-recipe-page) | [Code](./challenge-01-recipe-page)
+- | 02 | [Social Links Profile](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/02-social-links-profile) | [Code](./challenge-02-social-links-profile)
+- | 03 | [Blog Preview Card](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/03-blog-preview-card) | [Code](./challenge-03-blog-preview-card)
+- | 04 | [FAQ Accordion](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/04-faq-accordion) | [Code](./challenge-04-faq-accordion)
+- | 05 | [Results Summary Component](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/05-results-summary-component) | [Code](./challenge-05-results-summary-component)
+- | 06 | [Results Summary Component](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/06-product-preview-card-component) | [Code](./challenge-06-product-preview-card-component)
 
 ## 🛠️ Tech Stack
 
