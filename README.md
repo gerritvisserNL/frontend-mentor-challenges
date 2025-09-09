@@ -22,6 +22,7 @@ This repository tracks my progress, solutions, and learnings.
 - | 04 | [FAQ Accordion](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/04-faq-accordion) | [Code](./challenge-04-faq-accordion)
 - | 05 | [Results Summary Component](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/05-results-summary-component) | [Code](./challenge-05-results-summary-component)
 - | 06 | [Results Summary Component](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/06-product-preview-card-component) | [Code](./challenge-06-product-preview-card-component)
+- | 07 | [Results Summary Component](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/07-interactive-rating-component) | [Code](./challenge-07-interactive-rating-component)
 
 ## 🛠️ Tech Stack
 
@@ -33,7 +34,7 @@ This repository tracks my progress, solutions, and learnings.
 
 ## 📈 Progress
 
-- ✅ Completed: 6 / 60
+- ✅ Completed: 7 / 60
 - 🔄 In progress: 1
 - 🎯 Goal: Finish all 60 challenges
 
