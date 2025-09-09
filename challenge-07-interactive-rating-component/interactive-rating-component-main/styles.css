@@ -1,0 +1,140 @@
+:root {
+  --orange-500: hsl(25, 97%, 53%);
+  --white: hsl(0, 100%, 100%);
+  --grey-500: hsl(217, 12%, 63%);
+  --grey-880: hsl(213, 19%, 22%);
+  --grey-900: hsl(213, 19%, 18%);
+  --grey-950: hsl(216, 12%, 8%);
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  background-color: var(--grey-950);
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--grey-900);
+  padding: 1.75rem;
+  border-radius: 1rem;
+  width: 22rem;
+}
+
+.star img {
+  padding: 0.9rem;
+  border-style: none;
+  border-radius: 50%;
+  background-color: var(--grey-880);
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--white);
+  margin: 1rem 0;
+}
+
+p.request {
+  color: var(--grey-500);
+  font-size: 0.9rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li button {
+  background-color: var(--grey-880);
+  border-style: none;
+  border-radius: 50%;
+  width: 3rem;
+  aspect-ratio: 1 / 1;
+  color: var(--grey-500);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+li button:hover {
+  background-color: var(--orange-500);
+  cursor: pointer;
+  color: var(--grey-950);
+}
+
+li button:active {
+  background-color: var(--white);
+  cursor: pointer;
+  color: var(--grey-950);
+}
+
+button.submit-btn {
+  background-color: var(--orange-500);
+  border-style: none;
+  padding: 0.75rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+button.submit-btn:active {
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.thankyou-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.thankyou-wrapper img {
+  margin: 0.5rem 0 1.75rem;
+}
+
+.rating {
+  background-color: var(--grey-880);
+  color: var(--orange-500);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+
+.thankyou {
+  color: var(--white);
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.message {
+  color: var(--grey-500);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
