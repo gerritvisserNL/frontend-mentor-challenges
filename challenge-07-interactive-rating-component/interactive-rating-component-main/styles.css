@@ -30,16 +30,31 @@ main {
   flex-direction: column;
   justify-content: center;
   background-color: var(--grey-900);
-  padding: 1.75rem;
+  padding: 1.75rem 1.75rem;
   border-radius: 1rem;
   width: 22rem;
 }
 
-.star img {
-  padding: 0.9rem;
-  border-style: none;
+.request-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.star {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   background-color: var(--grey-880);
+}
+.star img {
+  width: 1rem;
+  height: auto;
 }
 
 h1 {
@@ -115,8 +130,12 @@ button.submit-btn:active {
   height: 100%;
 }
 
+.hidden {
+  display: none;
+}
+
 .thankyou-wrapper img {
-  margin: 0.5rem 0 1.75rem;
+  margin: 0 0 1.75rem;
 }
 
 .rating {
@@ -129,12 +148,11 @@ button.submit-btn:active {
 
 .thankyou {
   color: var(--white);
-  margin: 1.5rem 0 0.5rem;
+  margin: 1rem 0 0.3rem;
   font-size: 1.2rem;
 }
 
 .message {
   color: var(--grey-500);
   text-align: center;
-  margin-bottom: 0.5rem;
 }
