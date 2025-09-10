@@ -1,10 +1,16 @@
 const ratingButtons = document.querySelectorAll(".rating-list button");
-console.log(ratingButtons);
 
 let selectedId = null;
 
 ratingButtons.forEach((button) => {
   button.addEventListener("click", () => {
+    // reset all buttons
+    ratingButtons.forEach((btn) => btn.classList.remove("active"));
+
+    // make current button active
+    button.classList.add("active");
+
+    // save id
     selectedId = button.id;
   });
 });

@@ -101,7 +101,7 @@ li button:hover {
   color: var(--grey-950);
 }
 
-li button:active {
+li button.active {
   background-color: var(--white);
   cursor: pointer;
   color: var(--grey-950);
@@ -114,6 +114,11 @@ button.submit-btn {
   border-radius: 2rem;
   font-weight: 700;
   letter-spacing: 2px;
+}
+
+button.submit-btn:hover {
+  background-color: var(--white);
+  cursor: pointer;
 }
 
 button.submit-btn:active {

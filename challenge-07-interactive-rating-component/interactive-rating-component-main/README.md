@@ -37,7 +37,9 @@ I learned how to attach click event listeners to buttons and use a variable to s
 
 I also updated the DOM by changing text with .textContent and toggling visibility with classList.add and classList.remove.
 
-Using console.log for debugging helped me understand how values changed step by step. This project gave me more confidence in handling events, managing state and updating the DOM.
+I discovered that the :active pseudo-class cannot be added with JavaScript, so I created a custom "active" class instead. By first removing the class from all buttons and then adding it only to the clicked one, I ensured that only the selected button stays highlighted.
+
+Using console.log for debugging helped me understand how values changed step by step. This project gave me more confidence in handling events, managing state, styling active elements, and updating the DOM.
 
 ## Author
 
