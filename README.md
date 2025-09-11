@@ -26,6 +26,7 @@ This repository tracks my progress, solutions, and learnings.
 - | 08 | [QR Code Component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/08-qr-code-component) | [Code](./challenge-08-qr-code-component)
 - | 09 | [NFT Preview Card Component](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/09-nft-preview-card-component) | [Code](./challenge-09-nft-preview-card-component)
 - | 10 | [Order Summary Component](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/10-order-summary-component) | [Code](./challenge-10-order-summary-component)
+- | 11 | [Stats Preview Component](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/11-stats-preview-component) | [Code](./challenge-11-stats-preview-component)
 
 ## 🛠️ Tech Stack
 
