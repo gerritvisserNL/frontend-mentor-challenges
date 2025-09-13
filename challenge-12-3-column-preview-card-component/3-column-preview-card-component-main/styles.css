@@ -94,10 +94,16 @@ button:hover {
 @media (min-width: 1440px) {
   main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     border-radius: 0;
     max-width: 919px;
     height: 500px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   section.sedans {
@@ -113,6 +119,6 @@ button:hover {
   }
 
   button {
-    margin-top: 4rem;
+    margin-top: auto;
   }
 }

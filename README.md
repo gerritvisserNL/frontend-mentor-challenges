@@ -27,6 +27,7 @@ This repository tracks my progress, solutions, and learnings.
 - | 09 | [NFT Preview Card Component](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/09-nft-preview-card-component) | [Code](./challenge-09-nft-preview-card-component)
 - | 10 | [Order Summary Component](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/10-order-summary-component) | [Code](./challenge-10-order-summary-component)
 - | 11 | [Stats Preview Component](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/11-stats-preview-component) | [Code](./challenge-11-stats-preview-component)
+- | 12 | [3 Column Preview Card Component](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/12-3column-preview-component) | [Code](./challenge-12-3-column-preview-component)
 
 ## 🛠️ Tech Stack
 
@@ -38,7 +39,7 @@ This repository tracks my progress, solutions, and learnings.
 
 ## 📈 Progress
 
-- ✅ Completed: 8 / 60
+- ✅ Completed: 12 / 60
 - 🔄 In progress: 1
 - 🎯 Goal: Finish all 60 challenges
 
