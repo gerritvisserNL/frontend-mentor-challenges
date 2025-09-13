@@ -29,6 +29,7 @@ main {
   justify-content: center;
   border-radius: 0.75rem;
   margin: 2rem;
+  max-width: 35rem;
 }
 
 section {
@@ -77,15 +78,41 @@ p {
 }
 
 button {
-  border: 1px solid var(--color-white-trans-75);
+  border: 2px solid var(--color-white-trans-75);
   padding: 0.75rem 2rem;
   border-radius: 2rem;
   color: var(--color-gold-500);
 }
 
 button:hover {
-  border: 1px solid var(--color-white-trans-75);
+  border: 2px solid var(--color-white-trans-75);
   color: var(--color-white-trans-75);
   background-color: transparent;
   cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 0;
+    max-width: 919px;
+    height: 500px;
+  }
+
+  section.sedans {
+    border-radius: 0;
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+  }
+
+  section.luxury {
+    border-radius: 0;
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+  }
+
+  button {
+    margin-top: 4rem;
+  }
 }
