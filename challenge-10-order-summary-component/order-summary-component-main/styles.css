@@ -23,6 +23,10 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .wrapper {
@@ -34,6 +38,7 @@ body {
   text-align: center;
   background-color: #fff;
   border-radius: 1rem;
+  box-shadow: 0 1.2rem 1rem var(--blue-700-shadow);
 }
 
 header {
@@ -134,4 +139,13 @@ button.cancelBtn {
 button.cancelBtn:hover {
   cursor: pointer;
   color: var(--blue-950);
+}
+
+@media (min-width: 1440px) {
+  .container {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 }
