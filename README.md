@@ -28,6 +28,7 @@ This repository tracks my progress, solutions, and learnings.
 - | 10 | [Order Summary Component](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/10-order-summary-component) | [Code](./challenge-10-order-summary-component)
 - | 11 | [Stats Preview Component](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/11-stats-preview-component) | [Code](./challenge-11-stats-preview-component)
 - | 12 | [3 Column Preview Card Component](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/12-3column-preview-component) | [Code](./challenge-12-3-column-preview-component)
+- | 13 | [Profile Card Component](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/13-profile-card-component) | [Code](./challenge-13-profile-card-component)
 
 ## 🛠️ Tech Stack
 
@@ -39,7 +40,7 @@ This repository tracks my progress, solutions, and learnings.
 
 ## 📈 Progress
 
-- ✅ Completed: 12 / 60
+- ✅ Completed: 13 / 60
 - 🔄 In progress: 1
 - 🎯 Goal: Finish all 60 challenges
 
