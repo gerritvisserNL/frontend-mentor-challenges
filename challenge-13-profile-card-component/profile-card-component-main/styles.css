@@ -1,0 +1,129 @@
+:root {
+  --blue-600: hsl(185, 75%, 39%);
+  --navy-950: hsl(229, 23%, 23%);
+  --gray-500: hsl(227, 10%, 46%);
+  --gray-100: hsl(225, 10%, 92%);
+
+  /* Font */
+  --font-sans: "Kumbh Sans", sans-serif;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-image: url("./images/bg-pattern-card.svg");
+  background-position: center top;
+  background-size: 2500%;
+  background-repeat: no-repeat;
+  background-position-y: 28%;
+  color: var(--navy-950);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 326px;
+  height: 374px;
+  background-color: var(--gray-100);
+  border-radius: 1rem;
+}
+
+header {
+  position: relative;
+  background-image: url("./images/bg-pattern-card.svg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+header img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -53px;
+  border: 5px solid var(--gray-100);
+  border-radius: 50%;
+  width: 106px;
+  height: 106px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: 700;
+  color: var(--navy-950);
+  font-size: 1.1rem;
+  margin-top: 4rem;
+}
+
+small {
+  color: var(--gray-500);
+  font-weight: 400;
+  margin-left: 0.3rem;
+}
+
+.location {
+  font-weight: 400;
+  color: var(--gray-500);
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem 3rem 1rem 2rem;
+  border-top: 1px solid var(--gray-500);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-numbers {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: var(--gray-500);
+}
+
+@media (min-width: 800px) {
+  body {
+    background-image: url("./images/bg-pattern-card.svg");
+    background-position: center top;
+    background-size: 1400%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 70%;
+  }
+}
