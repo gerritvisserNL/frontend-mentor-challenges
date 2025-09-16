@@ -24,7 +24,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--clr-navy-950);
 }
 
@@ -38,6 +38,7 @@ body {
   text-align: center;
   background-color: var(--clr-blue-950);
   border-radius: 0.75rem;
+  margin: 2rem 0;
 }
 
 header {
