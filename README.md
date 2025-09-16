@@ -29,6 +29,7 @@ This repository tracks my progress, solutions, and learnings.
 - | 11 | [Stats Preview Component](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/11-stats-preview-component) | [Code](./challenge-11-stats-preview-component)
 - | 12 | [3 Column Preview Card Component](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/12-3column-preview-component) | [Code](./challenge-12-3-column-preview-component)
 - | 13 | [Profile Card Component](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/13-profile-card-component) | [Code](./challenge-13-profile-card-component)
+- | 14 | [Social Proof Section](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/14-social-proof-section) | [Code](./challenge-14-social-proof-section)
 
 ## 🛠️ Tech Stack
 
