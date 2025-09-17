@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -21,12 +20,72 @@
     <link rel="stylesheet" href="./styles.css" />
 
     <title>Frontend Mentor | Article preview component</title>
+
+    <script src="./script.js" defer></script>
   </head>
   <body>
-    Shift the overall look and feel by adding these wonderful touches to
-    furniture in your home Ever been in a room and felt like something was
-    missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple
-    tips to help you make any room feel complete. Michelle Appleton 28 Jun 2020
-    Share
+    <div class="container">
+      <div class="inner-container">
+        <header></header>
+        <div class="content">
+          <main>
+            <h1>
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h1>
+            <p>
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I've got some simple tips to
+              help you make any room feel complete.
+            </p>
+          </main>
+          <footer class="main-footer">
+            <img
+              class="avatar"
+              src="./images/avatar-michelle.jpg"
+              alt="avatar of Michelle Aplleton"
+            />
+            <div class="info">
+              <div class="name">Michelle Appleton</div>
+              <div class="date">28 Jun 2020</div>
+            </div>
+            <div class="shareBtn">
+              <img src="./images/icon-share.svg" alt="" class="share-icon" />
+            </div>
+            <div class="shareBtn-active hidden">
+              <img
+                src="./images/icon-share-white.svg"
+                class="share-icon-active"
+                alt=""
+              />
+            </div>
+            <div class="share-desktop hidden">
+            <p>share</p>
+            <div class="socials">
+              <img src="./images/icon-facebook.svg" alt="" />
+              <img src="./images/icon-twitter.svg" alt="" />
+              <img src="./images/icon-pinterest.svg" alt="" />
+            </div>
+          </footer>
+          
+            <footer class="share-footer hidden">
+              <p>share</p>
+              <div class="socials">
+                <img src="./images/icon-facebook.svg" alt="" />
+                <img src="./images/icon-twitter.svg" alt="" />
+                <img src="./images/icon-pinterest.svg" alt="" />
+              </div>
+              <div class="shareBtn-active-share-footer">
+                <img
+                  src="./images/icon-share-white.svg"
+                  class="share-icon-active"
+                  alt=""
+                />
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
