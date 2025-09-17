@@ -96,6 +96,17 @@ img.avatar {
   color: var(--grayish-blue);
 }
 
+button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:focus {
+  box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+}
+
 .shareBtn {
   display: flex;
   justify-content: center;
@@ -105,10 +116,9 @@ img.avatar {
   width: 35px;
   background-color: var(--light-grayish-blue);
   margin-left: auto;
-  cursor: pointer;
 }
 
-footer.share-footer {
+.share-mobile {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -121,25 +131,25 @@ footer.share-footer {
   background-color: var(--very-dark-grayish-blue);
 }
 
-footer.share-footer p {
+.share-mobile p {
   text-transform: uppercase;
   letter-spacing: 3px;
   color: var(--grayish-blue);
 }
 
-footer.share-footer .socials {
+.share-mobile .socials {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-footer.share-footer .socials img {
+.share-mobile .socials img {
   width: 20px;
   height: 20px;
   margin-left: 1.5rem;
 }
 
-.shareBtn-active {
+.shareBtn-active-mobile {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,7 +158,6 @@ footer.share-footer .socials img {
   width: 35px;
   background-color: var(--desaturated-dark-blue);
   margin-left: auto;
-  cursor: pointer;
 }
 
 .hidden {
@@ -190,6 +199,18 @@ footer.share-footer .socials img {
     margin-bottom: 1.5rem;
   }
 
+  .shareBtn-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    background-color: var(--desaturated-dark-blue);
+    margin-left: auto;
+    cursor: pointer;
+  }
+
   .share-desktop {
     position: absolute;
     top: -75px;
@@ -209,7 +230,7 @@ footer.share-footer .socials img {
   .share-desktop::after {
     content: "";
     position: absolute;
-    top: 98%; /* onder de container */
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     border-width: 16px;

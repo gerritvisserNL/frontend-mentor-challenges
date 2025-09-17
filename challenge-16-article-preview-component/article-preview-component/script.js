@@ -1,7 +1,8 @@
 const shareBtn = document.querySelector(".shareBtn");
 const shareBtnActive = document.querySelector(".shareBtn-active");
+const shareBtnActiveMobile = document.querySelector(".shareBtn-active-mobile");
 const mainFooter = document.querySelector(".main-footer");
-const shareFooter = document.querySelector(".share-footer");
+const shareMobile = document.querySelector(".share-mobile");
 const shareDesktop = document.querySelector(".share-desktop");
 
 // Media query for desktop (>= 1024px)
@@ -23,10 +24,10 @@ const handleShareClick = (isActive) => {
     // Mobile behaviour
     if (isActive) {
       mainFooter.classList.add("hidden");
-      shareFooter.classList.remove("hidden");
+      shareMobile.classList.remove("hidden");
     } else {
       mainFooter.classList.remove("hidden");
-      shareFooter.classList.add("hidden");
+      shareMobile.classList.add("hidden");
     }
   }
 };
@@ -34,3 +35,6 @@ const handleShareClick = (isActive) => {
 // Voeg toe aan buttons
 shareBtn.addEventListener("click", () => handleShareClick(true));
 shareBtnActive.addEventListener("click", () => handleShareClick(false));
+shareBtnActiveMobile.addEventListener("click", () => {
+  handleShareClick(false);
+});
