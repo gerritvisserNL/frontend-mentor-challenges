@@ -40,14 +40,15 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  max-width: 1440px;
 }
 
 .inner-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 375px;
+  max-width: 375px;
 }
 
 header {
@@ -66,12 +67,10 @@ header {
   width: auto;
 }
 
-.hero {
-  background-image: url("./images/hero-mobile.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
+.hero img {
+  display: block;
   width: 100%;
-  height: 250px;
+  height: auto;
 }
 
 main {
@@ -168,31 +167,30 @@ button:hover {
 @media (min-width: 1024px) {
   .inner-container {
     display: grid;
-    grid-template-columns: 830px 610px;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1.36fr 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-areas:
       "header hero"
-      "main hero"
-      "main hero"
       "main hero";
-    max-width: 1440px;
+    align-items: start;
+    max-height: 800px;
+    max-width: none;
+    width: 100%;
+    background-image: url("./images/bg-pattern-desktop.svg");
   }
 
   header {
     grid-area: header;
-  }
-  .hero {
-    grid-area: hero;
-  }
-  main {
-    grid-area: main;
+    padding: 4rem 10rem;
   }
 
   .hero {
-    background-image: url("./images/hero-desktop.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
-    width: 610px;
-    height: 800px;
+    grid-area: hero;
+  }
+
+  main {
+    grid-area: main;
+    text-align: left;
+    padding: 2rem 15rem 2rem 12rem;
   }
 }
