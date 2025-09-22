@@ -29,8 +29,6 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### What I learned
 
-What I’ve learned
-
 I usually build layouts mobile-first with Flexbox, but for larger screens Grid turned out to be much more powerful.
 
 I learned that grid-template-areas let you describe the layout in a very visual way, while grid-template-columns and grid-template-rows define the actual size of the tracks. The two work together: areas handle structure, columns and rows handle sizing.
