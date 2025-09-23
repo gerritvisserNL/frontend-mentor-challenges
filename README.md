@@ -31,6 +31,8 @@ This repository tracks my progress, solutions, and learnings.
 - | 13 | [Profile Card Component](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/13-profile-card-component) | [Code](./challenge-13-profile-card-component)
 - | 14 | [Social Proof Section](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/14-social-proof-section) | [Code](./challenge-14-social-proof-section)
 - | 15 | [Four Card Feature Section](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/15-four-card-feature-section) | [Code](./challenge-15-four-card-feature-section)
+- | 16 | [Article Preview Component](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/16-article-preview-component) | [Code](./challenge-16-article-preview-component)
+- | 17 | [Four Card Feature Section](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/17-base-apparel-coming-soon-page) | [Code](./challenge-17-base-apparel-coming-soon-page)
 
 ## 🛠️ Tech Stack
 
