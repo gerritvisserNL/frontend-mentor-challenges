@@ -33,6 +33,7 @@ This repository tracks my progress, solutions, and learnings.
 - | 15 | [Four Card Feature Section](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/15-four-card-feature-section) | [Code](./challenge-15-four-card-feature-section)
 - | 16 | [Article Preview Component](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/16-article-preview-component) | [Code](./challenge-16-article-preview-component)
 - | 17 | [Four Card Feature Section](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/17-base-apparel-coming-soon-page) | [Code](./challenge-17-base-apparel-coming-soon-page)
+- | 18 | [Intro Component With Signup Form](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/18-intro-component-with-signup-form) | [Code](./challenge-18-intro-component-with-signup-form)
 
 ## 🛠️ Tech Stack
 
