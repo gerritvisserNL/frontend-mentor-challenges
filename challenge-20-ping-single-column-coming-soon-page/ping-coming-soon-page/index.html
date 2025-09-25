@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -27,18 +26,29 @@
       <div class="inner-container">
         <header><img src="./images/logo.svg" alt="Logo of Ping" /></header>
         <main>
-          <h1>We are launching <span>soon!</span></h1>
-          <p>Subscribe and get notified</p>
-          <form>
-            <label for="email" class="sr-only">Email address</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your email address..."
-              required
-            /><button type="submit">Notify Me</button>
-          </form>
+          <div class="content">
+            <h1>We are launching <span>soon!</span></h1>
+            <p>Subscribe and get notified</p>
+            <form id="email-form" novalidate>
+              <span class="succes-message hidden"
+                >Email address succesfully submitted!</span
+              >
+              <div class="input-wrapper" id="input-wrapper">
+                <label for="email" class="sr-only">Email address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your email address..."
+                  required
+                />
+                <p class="error-message">
+                  Please provide a valid email address
+                </p>
+              </div>
+              <button type="submit">Notify Me</button>
+            </form>
+          </div>
           <img
             src="./images/illustration-dashboard.png"
             alt="Illustration of a dashboard"
