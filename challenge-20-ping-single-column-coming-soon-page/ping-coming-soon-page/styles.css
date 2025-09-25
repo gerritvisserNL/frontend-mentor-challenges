@@ -1,0 +1,151 @@
+:root {
+  /* Primary */
+  --blue-500: hsl(223, 87%, 63%);
+
+  /* Secondary */
+  --blue-200: hsl(223, 100%, 88%);
+  --red-400: hsl(354, 100%, 66%);
+
+  /* Neutral */
+  --gray-400: hsl(0, 0%, 59%);
+  --blue-950: hsl(209, 33%, 12%);
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  color: var(--blue-950);
+  font-weight: 300;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 375px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+header img {
+  width: 3rem;
+  height: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+h1 span {
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.65rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  border-radius: 2rem;
+  border-style: none;
+  border: 1px solid var(--blue-200);
+  font-size: 0.8rem;
+}
+
+input::placeholder {
+  color: var(--blue-200);
+}
+
+button {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border-style: none;
+  border: 1px solid var(--blue-500);
+  font-size: 0.8rem;
+  background-color: var(--blue-500);
+  color: hsl(0, 100%, 100%);
+  font-weight: 600;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+footer img {
+  height: 30px;
+  width: 30px;
+  border: 1px solid var(--blue-200);
+  border-radius: 50%;
+  padding: 0.2rem;
+}
