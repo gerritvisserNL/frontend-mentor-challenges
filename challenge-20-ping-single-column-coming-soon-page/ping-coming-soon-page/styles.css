@@ -131,7 +131,8 @@ input::placeholder {
   color: var(--red-400);
   font-style: italic;
   display: none;
-  margin: 0.5rem 0 0;
+  margin: 0.25rem 0 0;
+  text-align: center;
 }
 
 .input-wrapper.error .error-message {
