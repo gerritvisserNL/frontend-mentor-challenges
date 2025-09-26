@@ -8,10 +8,13 @@ const succesMsg = document.querySelector(".succes-message");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  if (!emailPattern.test(emailInput.value.trim())) {
+  if (!emailPattern.test(emailInput.value.trim()) || emailInput.value === "") {
     inputWrapper.classList.add("error");
+    form.classList.add("form-error-margin-bottom");
+    succesMsg.classList.remove("active");
   } else {
-    succesMsg.classList.remove("hidden");
+    form.classList.remove("form-error-margin-bottom");
+    succesMsg.classList.add("active");
     emailInput.value = "";
   }
 });
@@ -19,17 +22,15 @@ form.addEventListener("submit", (e) => {
 emailInput.addEventListener("input", (event) => {
   if (emailPattern.test(emailInput.value.trim())) {
     inputWrapper.classList.remove("error");
+    form.classList.remove("form-error-margin-bottom");
   }
 
   if (emailInput.value === "") {
     inputWrapper.classList.remove("error");
+    form.classList.remove("form-error-margin-bottom");
   }
 
   if (event) {
-    succesMsg.classList.add("hidden");
+    succesMsg.classList.remove("active");
   }
 });
-
-// classList add/remove. Een classname geef je door zonder (.) punt
-// Een punt gebruik je alleen in CSS-selectors. bijv. querySelector(".succes-message");
-// submitBtn.style.removeProperty("padding") werkt alleen bij inline-css.

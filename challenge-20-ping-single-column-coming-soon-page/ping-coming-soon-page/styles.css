@@ -77,7 +77,18 @@ h1 span {
 p {
   font-size: 0.65rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
+}
+
+.succes-message {
+  display: block;
+  font-size: 0.6rem;
+  color: rgb(0, 255, 0);
+  margin: 0.5rem 0 0.25rem;
+  visibility: hidden;
+}
+
+.succes-message.active {
+  visibility: visible;
 }
 
 form {
@@ -131,7 +142,7 @@ input::placeholder {
   color: var(--red-400);
   font-style: italic;
   display: none;
-  margin: 0.25rem 0 0;
+  margin: 0.25rem 0;
   text-align: center;
 }
 
@@ -139,15 +150,12 @@ input::placeholder {
   display: block;
 }
 
-.succes-message {
-  display: block;
-  font-size: 0.8rem;
-  color: rgb(0, 255, 0);
-  text-align: center;
+.input-wrapper.error input {
+  border: 1px solid rgb(255, 0, 0);
 }
 
-.hidden {
-  display: none;
+.form-error-margin-bottom {
+  margin-bottom: 1.5rem;
 }
 
 button {
@@ -201,4 +209,47 @@ footer p {
   color: var(--gray-400);
   font-weight: 300;
   margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .inner-container {
+    width: 641px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .error-message {
+    text-align: left;
+    margin-left: 1.5rem;
+  }
+
+  .form-error-margin-bottom {
+    margin-bottom: 1.6rem;
+  }
+
+  button {
+    width: 15rem;
+  }
 }
