@@ -82,7 +82,7 @@ p {
 .succes-message {
   display: block;
   font-size: 0.6rem;
-  color: rgb(0, 255, 0);
+  color: rgb(50, 180, 50);
   margin: 0.5rem 0 0.25rem;
   visibility: hidden;
 }
@@ -155,7 +155,7 @@ input::placeholder {
 }
 
 .form-error-margin-bottom {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.6rem;
 }
 
 button {
@@ -243,10 +243,6 @@ footer p {
   .error-message {
     text-align: left;
     margin-left: 1.5rem;
-  }
-
-  .form-error-margin-bottom {
-    margin-bottom: 1.6rem;
   }
 
   button {
