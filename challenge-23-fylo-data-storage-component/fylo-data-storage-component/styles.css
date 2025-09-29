@@ -1,0 +1,236 @@
+:root {
+  /* Primary */
+  --clr-primary-gradient: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+
+  /* Neutral */
+  --clr-blue-200: hsl(243, 100%, 93%);
+  --clr-grayish-blue: hsl(229, 7%, 55%);
+  --clr-blue-850: hsl(228, 56%, 26%);
+  --clr-blue-950: hsl(229, 57%, 11%);
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: var(--clr-blue-200);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-image: url("./images/bg-mobile.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 326px;
+  gap: 1.5rem;
+}
+
+.top-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--clr-blue-850);
+  width: 100%;
+  border-radius: 1rem;
+  border-top-right-radius: 10rem;
+  padding: 3rem;
+}
+
+img.logo {
+  width: 10rem;
+  height: auto;
+}
+
+.icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icons-wrapper .image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: var(--clr-blue-950);
+  border-radius: 1rem;
+}
+
+.icons-wrapper .image-wrapper img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: none;
+}
+
+.bottom-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-blue-850);
+  width: 100%;
+  height: 160px;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.bottom-box span {
+  font-weight: 700;
+}
+
+.meter {
+  position: relative;
+  width: 100%;
+  height: 1.5rem;
+  margin: 1rem 0 0.5rem;
+  border-radius: 0.75rem;
+  background-color: hsl(226, 57%, 18%);
+}
+
+.meter .fill {
+  height: 100%;
+  width: 81.5%;
+  background: var(
+    --clr-primary-gradient
+  ); /* Gradient only with background property */
+  border: 3px solid hsl(226, 57%, 18%);
+  border-radius: 0.75rem;
+}
+
+.meter .dot {
+  position: absolute;
+  top: 50%;
+  left: calc(81.5% - 4px);
+  transform: translate(-100%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.scale {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.storage-left-box-mobile {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  padding: 0.75rem;
+  width: 180px;
+  border-radius: 1rem;
+}
+
+.number {
+  font-size: 3rem;
+  color: var(--clr-blue-950);
+}
+
+.gb-left {
+  text-transform: uppercase;
+  color: var(--clr-grayish-blue);
+}
+
+.storage-left-box-desktop {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    position: relative;
+    background-image: url("./images/bg-desktop.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: var(--clr-blue-950);
+    background-size: contain;
+  }
+
+  .wrapper {
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: auto;
+  }
+
+  .top-box {
+    width: 350px;
+  }
+
+  .bottom-box {
+    width: 540px;
+    text-align: left;
+  }
+
+  .storage-left-box-mobile {
+    display: none;
+  }
+
+  .storage-left-box-desktop {
+    display: block;
+    position: absolute;
+    top: -50px;
+    right: 25px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 0.5rem 1.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  .storage-left-box-desktop::after {
+    content: "";
+    position: absolute;
+    bottom: -19px; /* beneath the box */
+    right: 0;
+    width: 0;
+    height: 0;
+
+    border-right: 0; /* no border at the right side */
+    border-left: 20px solid transparent; /* diagonal left */
+    border-top: 20px solid hsl(0, 0%, 100%); /* color of the box */
+  }
+}
