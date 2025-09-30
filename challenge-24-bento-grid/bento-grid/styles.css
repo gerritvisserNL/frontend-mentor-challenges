@@ -4,6 +4,7 @@
   --clr-yellow-100: hsl(31, 66%, 93%);
   --clr-yellow-500: hsl(39, 100%, 71%);
   --clr-white: hsl(0, 0%, 100%);
+  --clr-white-bg: hsl(0, 0%, 96%);
   --clr-black: hsl(0, 0%, 7%);
 }
 
@@ -18,8 +19,230 @@ body {
 
 .container {
   display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--clr-white-bg);
+  min-width: 375px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
-  height: 100dvh;
+  width: 343px;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.top-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--clr-purple-500);
+  padding: 2rem;
+  border-radius: 0.75rem;
+}
+
+h1 {
+  color: var(--clr-white);
+  text-align: center;
+  font-size: 2.4em;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.faster span:first-child {
+  color: var(--clr-yellow-500);
+}
+
+.faster span:last-child {
+  font-style: italic;
+}
+
+.top-center img {
+  margin: 1.25rem 0 0.3rem;
+  width: 10rem;
+}
+
+.top-center p {
+  color: var(--clr-white);
+}
+
+.center-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--clr-white);
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+}
+
+.center-left img {
+  margin-bottom: 1rem;
+}
+
+.center-left h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+
+.center-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background-color: var(--clr-yellow-500);
+  border-radius: 0.75rem;
+  padding: 1rem 1rem 0;
+  gap: 0.75rem;
+}
+
+.center-right h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+}
+
+.center-right img {
+  display: block;
+  width: 11.5rem;
+  height: auto;
+}
+
+.crop-box {
+  width: auto;
+  height: 7.5rem;
+  overflow: hidden;
+}
+
+.top-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   background-color: var(--clr-purple-100);
+  border-radius: 0.75rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.top-right h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.top-right img {
+  margin: 1rem 0;
+}
+
+.top-right p {
+  font-size: 1.02rem;
+  font-weight: 500;
+  line-height: 1.1rem;
+}
+
+.bottom-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--clr-purple-500);
+  border-radius: 0.75rem;
+  padding: 1rem 3rem;
+}
+
+.bottom-right img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.bottom-right h2 {
+  font-size: 1.5rem;
+  color: var(--clr-white);
+  text-align: center;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.bottom-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem 1rem;
+  text-align: left;
+}
+
+.bottom-center h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.bottom-center h2 span {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.bottom-center img {
+  width: 10rem;
+  margin-top: 1rem;
+}
+
+.top-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background-color: var(--clr-yellow-100);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.top-left h2 {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+.top-left h2 span {
+  color: var(--clr-purple-500);
+  font-style: italic;
+}
+
+.top-left img {
+  margin-top: 1rem;
+  width: 65%;
+}
+
+.bottom-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background-color: var(--clr-yellow-500);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.bottom-left h2 {
+  font-size: 1.7rem;
+  line-height: 1.6rem;
+}
+
+.bottom-left img {
+  margin-top: 1rem;
+  width: 80%;
 }
