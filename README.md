@@ -34,7 +34,9 @@ This repository tracks my progress, solutions, and learnings.
 - | 16 | [Article Preview Component](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/16-article-preview-component) | [Code](./challenge-16-article-preview-component)
 - | 17 | [Four Card Feature Section](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/17-base-apparel-coming-soon-page) | [Code](./challenge-17-base-apparel-coming-soon-page)
 - | 18 | [Intro Component With Signup Form](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/18-intro-component-with-signup-form) | [Code](./challenge-18-intro-component-with-signup-form)
-- | 98 | [Single Price Grid Component](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/19-single-price-grid-component) | [Code](./challenge-19-single-price-grid-component)
+- | 19 | [Single Price Grid Component](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/19-single-price-grid-component) | [Code](./challenge-19-single-price-grid-component)
+- | 20 | [Ping Single Column Coming Soon Page](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/20-ping-single-column-coming-soon-page) | [Code](./challenge-20-ping-single-column-coming-soon-page)
+- | 21 | [Huddle Landing Page With A Single INtroductory Section](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/21-huddle-landing-page) | [Code](./challenge-21-huddle-landing-page-with-a-single-introductory-section)
 
 ## 🛠️ Tech Stack
 
@@ -46,7 +48,7 @@ This repository tracks my progress, solutions, and learnings.
 
 ## 📈 Progress
 
-- ✅ Completed: 15 / 60
+- ✅ Completed: 21 / 60
 - 🔄 In progress: 1
 - 🎯 Goal: Finish all 60 challenges
 
