@@ -197,10 +197,4 @@ p.highlight {
   .bottom-center {
     grid-area: bottom-center;
   }
-
-  /* article.bottom-left,
-  article.bottom-center,
-  article.bottom-right {
-    padding-bottom: 0;
-  } */
 }
