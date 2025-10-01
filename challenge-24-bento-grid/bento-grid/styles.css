@@ -124,6 +124,7 @@ h1 span:nth-child(3) {
 }
 
 .top-right {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,6 +134,7 @@ h1 span:nth-child(3) {
   border-radius: 0.75rem;
   padding: 1.5rem 1rem;
   text-align: center;
+  overflow: visible;
 }
 
 .top-right h2 {
@@ -261,15 +263,16 @@ h1 span:nth-child(3) {
 
   .wrapper {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 256px);
     grid-template-rows: auto 1fr 1fr;
     grid-template-areas:
       "left-wrapper top-center top-center top-right"
       "left-wrapper center-left center-right top-right"
       "left-wrapper bottom-center bottom-right bottom-right";
-    gap: 1rem;
+    gap: calc((1120px - (4 * 256px)) / 3);
     width: 1120px;
     height: 880px;
+    background-color: red;
   }
 
   .left-wrapper {
@@ -283,25 +286,45 @@ h1 span:nth-child(3) {
 
   .top-center {
     grid-area: top-center;
+    height: 100%;
   }
 
   .top-right {
     grid-area: top-right;
+    position: relative;
+    overflow: visible;
+    text-align: left;
+    height: 100%;
+    padding: 1.5rem;
+  }
+
+  .top-right h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .top-right img {
+    height: 320px;
+    width: auto;
   }
 
   .center-left {
     grid-area: center-left;
+    height: 100%;
   }
 
   .center-right {
     grid-area: center-right;
+    height: 100%;
   }
 
   .bottom-center {
     grid-area: bottom-center;
+    height: 100%;
   }
 
   .bottom-right {
     grid-area: bottom-right;
+    height: 100%;
   }
 }
