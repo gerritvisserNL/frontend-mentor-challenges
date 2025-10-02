@@ -61,6 +61,8 @@ section {
   color: var(--clr-white);
   border-radius: 0.75rem;
   box-shadow: 30px 65px 65px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 0;
 }
 
 .testimonial-header {
@@ -167,7 +169,6 @@ p.highlight {
   .top-left {
     position: relative;
     grid-area: top-left;
-    z-index: 0;
   }
 
   .top-left::after {
