@@ -54,11 +54,11 @@ h1 {
   line-height: 2rem;
 }
 
-h1 span:nth-child(2) {
+h1 span:nth-child(1) {
   color: var(--clr-yellow-500);
 }
 
-h1 span:nth-child(3) {
+h1 span:nth-child(2) {
   font-style: italic;
   margin-left: -0.3rem;
 }
@@ -113,12 +113,12 @@ h1 span:nth-child(3) {
 
 .center-right img {
   display: block;
-  width: 11.5rem;
+  width: 100%;
   height: auto;
 }
 
-.crop-box {
-  width: auto;
+.crop-box-center-right {
+  width: 11.5rem;
   height: 7.5rem;
   overflow: hidden;
 }
@@ -193,7 +193,8 @@ h1 span:nth-child(3) {
   font-weight: 400;
 }
 
-.bottom-center h2 span {
+.bottom-center h2 span:first-child {
+  display: block;
   font-size: 2.5rem;
   font-weight: 500;
 }
@@ -264,7 +265,7 @@ h1 span:nth-child(3) {
   .wrapper {
     display: grid;
     grid-template-columns: repeat(4, 256px);
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto 1fr 1fr;
     grid-template-areas:
       "left-wrapper top-center top-center top-right"
       "left-wrapper center-left center-right top-right"
@@ -272,7 +273,6 @@ h1 span:nth-child(3) {
     gap: calc((1120px - (4 * 256px)) / 3);
     width: 1120px;
     height: 880px;
-    background-color: red;
   }
 
   .left-wrapper {
@@ -286,7 +286,12 @@ h1 span:nth-child(3) {
 
   .top-center {
     grid-area: top-center;
-    height: 100%;
+    height: 324px;
+  }
+
+  .top-center h1 {
+    font-size: 3rem;
+    line-height: 3rem;
   }
 
   .top-right {
@@ -297,7 +302,7 @@ h1 span:nth-child(3) {
   }
 
   .top-right h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.5rem;
   }
 
@@ -305,6 +310,7 @@ h1 span:nth-child(3) {
     height: 320px;
     width: 230px;
     overflow: hidden;
+    margin: 1.5rem 0;
   }
 
   .top-right .crop-box-top-right img {
@@ -318,23 +324,149 @@ h1 span:nth-child(3) {
     padding: 0;
   }
 
+  .top-right p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+
   .center-left {
     grid-area: center-left;
+    justify-content: unset;
+    align-items: unset;
     height: 100%;
+    padding: 1.5rem 0 1rem 1.5rem;
+  }
+
+  .center-left .crop-box-center-left {
+    height: 66px;
+    width: 229px;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .center-left .crop-box-center-left img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .center-left h2 {
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    margin: 1rem 0 0;
+    padding-right: 1rem;
   }
 
   .center-right {
     grid-area: center-right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
     height: 100%;
+    padding-bottom: 0;
+  }
+
+  .center-right h2 {
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+  }
+
+  .center-right .crop-box-center-right {
+    width: 12rem;
+    height: 5.5rem;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .center-right img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
   }
 
   .bottom-center {
     grid-area: bottom-center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     height: 100%;
+    padding: 1.5rem;
+  }
+
+  .bottom-center h2 span:first-child {
+    display: block;
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+
+  .bottom-center h2 span:last-child {
+    font-size: 1rem;
+    line-height: 3rem;
+  }
+
+  .bottom-center img {
+    margin-top: auto;
   }
 
   .bottom-right {
     grid-area: bottom-right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     height: 100%;
+    padding: 1.4rem;
+    gap: 1rem;
+  }
+
+  .bottom-right h2 {
+    text-align: left;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .bottom-right img {
+    display: block;
+    height: 200px;
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .top-left {
+    gap: 0.5rem;
+  }
+
+  .top-left h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .top-left img {
+    width: 200px;
+    height: auto;
+  }
+
+  .bottom-left {
+    justify-content: flex-start;
+    padding-right: 0;
+  }
+
+  .bottom-left h2 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding-right: 1.5rem;
+  }
+
+  .bottom-left img {
+    height: 222px;
+    width: auto;
+    margin-top: auto;
   }
 }
