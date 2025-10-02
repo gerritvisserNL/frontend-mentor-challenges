@@ -37,6 +37,9 @@ This repository tracks my progress, solutions, and learnings.
 - | 19 | [Single Price Grid Component](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/19-single-price-grid-component) | [Code](./challenge-19-single-price-grid-component)
 - | 20 | [Ping Single Column Coming Soon Page](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/20-ping-single-column-coming-soon-page) | [Code](./challenge-20-ping-single-column-coming-soon-page)
 - | 21 | [Huddle Landing Page With A Single INtroductory Section](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/21-huddle-landing-page) | [Code](./challenge-21-huddle-landing-page-with-a-single-introductory-section)
+- | 22 | [Testimonials Grid Section](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/22-testimonials-grid-section) | [Code](./challenge-22-testimonials-grid-section)
+- | 23 | [Fylo Data Storage Component](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/23-fylo-data-storage-component) | [Code](./challenge-23-fylo-data-storage-component)
+- | 24 | [Bento Grid](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/24-bento-grid) | [Code](./challenge-24-bento-grid)
 
 ## 🛠️ Tech Stack
 
@@ -48,7 +51,7 @@ This repository tracks my progress, solutions, and learnings.
 
 ## 📈 Progress
 
-- ✅ Completed: 21 / 60
+- ✅ Completed: 24 / 60
 - 🔄 In progress: 1
 - 🎯 Goal: Finish all 60 challenges
 
