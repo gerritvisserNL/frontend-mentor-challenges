@@ -17,7 +17,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://www.gerritvisser.nl/frontendmentor/challenges/20-ping-single-column-coming-soon-page)
+- Live Site URL: [Add live site URL here](https://www.gerritvisser.nl/frontendmentor/challenges/22-testimonials-grid-section)
 
 ## My process
 

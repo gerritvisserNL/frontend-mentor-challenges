@@ -17,7 +17,7 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://www.gerritvisser.nl/frontendmentor/challenges/20-ping-single-column-coming-soon-page)
+- Live Site URL: [Add live site URL here](https://www.gerritvisser.nl/frontendmentor/challenges/23-fylo-data-storage-component)
 
 ## My process
 
