@@ -21,7 +21,7 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--color-off-white);
 }
 
@@ -30,7 +30,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 350px;
-  margin: 2rem 0;
+  margin: 2rem 0 4rem;
 }
 
 header {
@@ -85,7 +85,7 @@ article button {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin: 2rem 0;
+  margin: 2rem 0 4rem;
 }
 
 ul.new-media-item {
@@ -119,8 +119,49 @@ ul.new-media-item li:last-child {
 }
 
 ul.media-item {
-  margin: 4rem 0;
+  margin: 4rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 ul.media-item li {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.media-item-illustration {
+  width: 100px;
+  height: 129px;
+  flex-shrink: 0; /*  */
+}
+
+.media-item-illustration img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.media-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.media-item-content .number {
+  color: var(--color-soft-red);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.9rem;
+}
+
+.media-item-content h3 {
+  font-weight: 800;
+  margin: 1rem 0 0.75rem;
+}
+
+.media-item-content p {
+  color: var(--color-dark-grayish-blue);
+  margin-right: 0.5rem;
 }
