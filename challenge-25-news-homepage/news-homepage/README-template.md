@@ -31,6 +31,11 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 Reminder: ul.media-item means "select a <ul> element with the class media-item."
 
+flex-shrink defines how much a flex item is allowed to shrink when there isn’t enough space in its flex container.
+
+flex-shrink: 1; → the item can shrink (default).
+flex-shrink: 0; → the item won’t shrink, it keeps its set width.
+
 ## Author
 
 - Website - [Gerrit Visser](https://www.gerritvisser.nl)

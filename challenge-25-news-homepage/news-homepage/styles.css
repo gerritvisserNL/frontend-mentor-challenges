@@ -48,6 +48,50 @@ header img.logo {
 
 header img.menu-hamburger {
   display: block;
+  cursor: pointer;
+}
+
+header .overlay {
+  position: fixed;
+  top: 0;
+  inset: 0;
+  background-color: hsla(0, 0%, 0%, 0.6);
+  opacity: 0; /* overlay is transparent */
+  pointer-events: none; /* everything below the overlay is still clickable */
+  z-index: 5;
+}
+
+header .overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+header .menu-mobile {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 68%;
+  height: 100vh;
+  background-color: var(--color-off-white);
+  z-index: 10;
+}
+
+header .menu-mobile .menu-close img {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+header .menu-mobile ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin: 9rem 0 0 1.5rem;
+}
+
+header .menu-mobile li {
+  font-size: 1.5rem;
 }
 
 header .menu-desktop {
@@ -88,6 +132,12 @@ article button {
   margin: 2rem 0 4rem;
 }
 
+article button:hover {
+  color: var(--color-off-white);
+  background-color: var(--color-very-dark-blue);
+  cursor: pointer;
+}
+
 ul.new-media-item {
   background-color: var(--color-very-dark-blue);
   color: var(--color-off-white);
@@ -103,6 +153,16 @@ ul.new-media-item span {
 ul.new-media-item h2 {
   font-size: 1.37rem;
   margin: 2rem 0 0.5rem;
+}
+
+ul.new-media-item h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul.new-media-item h2 a:hover {
+  cursor: pointer;
+  color: var(--color-soft-orange);
 }
 
 ul.new-media-item p {
@@ -159,6 +219,16 @@ ul.media-item li {
 .media-item-content h3 {
   font-weight: 800;
   margin: 1rem 0 0.75rem;
+}
+
+.media-item-content h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.media-item-content h3 a:hover {
+  cursor: pointer;
+  color: var(--color-soft-red);
 }
 
 .media-item-content p {
