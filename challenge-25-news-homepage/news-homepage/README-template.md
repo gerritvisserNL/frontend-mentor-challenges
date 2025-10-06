@@ -36,6 +36,48 @@ flex-shrink defines how much a flex item is allowed to shrink when there isn’t
 flex-shrink: 1; → the item can shrink (default).
 flex-shrink: 0; → the item won’t shrink, it keeps its set width.
 
+---
+
+I added some movement to the desktop-menu with CSS.
+
+header .menu-mobile {
+position: fixed;
+top: 0;
+right: 0;
+width: 68%;
+height: 100vh;
+background-color: var(--color-off-white);
+transform: translateX(100%);
+transition: transform 0.3s ease;
+z-index: 10;
+}
+
+header .menu-mobile.active {
+transform: translateX(0);
+}
+
+The difference between transform, translate and transition:
+transform: changes the shape/position/rotation (e.g. rotate(45deg))
+translate: moves an element (e.g. translateX(100px))
+transition: makes that the transformation changes gradually (e.g. transform 0.3s ease)
+
+---
+
+querySelector works like CSS, classList works with HTML.
+
+With querySelector, you select a CSS class - always with a dot (.)
+With classList, you work with an HTML class - never use a dot.
+
+---
+
+Specificity: Determines which CSS rule wins when multiple rules target the same element.
+-- More specific selectors (like article .hero) override less specific ones (like .hero).
+
+Cascade: Determines the order of application when specificity is equal.
+-- Later rules in the stylesheet override earlier ones if specificity is the same.
+
+Shortcut to remember: "Specificity first, then order."
+
 ## Author
 
 - Website - [Gerrit Visser](https://www.gerritvisser.nl)
