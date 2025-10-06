@@ -83,6 +83,10 @@ The difference between `transform`, `translate`, and `transition`:
 
 **Shortcut to remember:** “Specificity first, then order.”
 
+---
+
+align-self: start → aligns the item to the top of its grid cell.
+
 ## Author
 
 - Website - [Gerrit Visser](https://www.gerritvisser.nl)
