@@ -65,7 +65,11 @@ header {
   padding: 2rem 1.5rem;
 }
 
-nav {
+.hamburger-menu:hover {
+  cursor: pointer;
+}
+
+.menu-mobile {
   display: block;
   display: flex;
   justify-content: center;
@@ -76,7 +80,19 @@ nav {
   background-color: var(--white);
 }
 
-nav ul {
+.menu-mobile::after {
+  content: "";
+  position: absolute;
+  top: -24px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-right: 0; /* no border at the right side */
+  border-left: 25px solid transparent; /* diagonal left */
+  border-bottom: 25px solid var(--white); /* color of the box */
+}
+
+.menu-mobile ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,7 +100,7 @@ nav ul {
   margin: 2.5rem;
 }
 
-nav ul li a {
+.menu-mobile ul li a {
   color: var(--grey-550);
   text-decoration: none;
   font-size: 1.25rem;
@@ -92,7 +108,7 @@ nav ul li a {
   line-height: 1.25rem;
 }
 
-nav ul li a:hover {
+.menu-mobile ul li a:hover {
   background-color: var(--yellow-500);
   border-radius: 2rem;
   text-transform: uppercase;
@@ -101,6 +117,10 @@ nav ul li a:hover {
   font-size: 1rem;
   color: var(--grey-950);
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
 
 .header-top {
