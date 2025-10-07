@@ -1,7 +1,9 @@
 :root {
   /* Primary Colors */
   --red-400: hsl(7, 99%, 70%);
+  --red-400-btn: hsla(7, 99%, 70%, 0.25);
   --yellow-500: hsl(51, 100%, 49%);
+  --yellow-500-btn: hsla(51, 100%, 49%, 0.25);
   --green-800: hsl(167, 40%, 24%);
   --blue-800: hsl(198, 62%, 26%);
   --green-500: hsl(167, 34%, 41%);
@@ -28,6 +30,13 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  line-height: 2.1rem;
+  font-weight: 900;
+}
+
+button {
   font-family: "Fraunces", serif;
 }
 
@@ -64,4 +73,164 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--white);
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
+.arrow img {
+  margin: 0 auto;
+  margin-top: 1.9rem;
+}
+
+main {
+  width: 100%;
+}
+
+.top-right {
+  background-image: url("./images/mobile/image-transform.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 312px;
+}
+
+.top-left,
+.center-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.top-left h2 {
+  font-size: 2rem;
+  line-height: 2.1rem;
+  font-weight: 900;
+}
+
+.top-left p,
+.center-right p {
+  color: var(--grey-550);
+}
+
+.top-left button,
+.center-right button {
+  position: relative;
+  display: inline-block;
+  font-weight: 900;
+  border-style: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  width: max-content;
+  padding: 0 0.4rem;
+}
+
+.top-left button::after,
+.center-right button::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  background-color: var(--yellow-500-btn);
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.center-right button::after {
+  background-color: var(--red-400-btn);
+}
+
+.center-left {
+  background-image: url("./images/mobile/image-stand-out.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 312px;
+}
+
+.bottom-left,
+.bottom-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-image: url("./images/mobile/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  color: var(--grey-600);
+  gap: 2rem;
+  padding: 3rem 1.5rem;
+}
+
+.bottom-right {
+  background-image: url("./images/mobile/image-photography.jpg");
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1.5rem 4rem;
+  text-align: center;
+  color: var(--grey-600);
+  gap: 3rem;
+}
+
+h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--grey-550);
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.testimonial img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+h4.author-name {
+  font-size: 1rem;
+  color: var(--grey-950);
+}
+
+.author-meta {
+  font-size: 0.9rem;
+  color: var(--grey-550);
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.image-gallery img {
+  height: calc(375px / 2);
+  width: calc(375px / 2);
 }
