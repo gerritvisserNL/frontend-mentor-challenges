@@ -14,6 +14,7 @@
   --grey-550: hsl(232, 10%, 55%);
   --grey-400: hsl(210, 4%, 67%);
   --white: hsl(0, 100%, 100%);
+  --white-hover: hsla(0, 100%, 100%, 0.2);
 }
 
 html {
@@ -332,15 +333,140 @@ footer li a {
 }
 
 @media (min-width: 1440px) {
-  .hamburger-menu {
-    display: none;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 800px 600px 600px 600px 777px 446px 350px;
+    grid-template-areas:
+      "header header"
+      "top-left top-right"
+      "center-left center-right"
+      "bottom-left bottom-right"
+      "testimonials testimonials"
+      "image-gallery image-gallery"
+      "footer footer";
+    width: 1440px;
   }
 
-  .menu-mobile {
+  /* Grid areas  */
+  header {
+    grid-area: header;
+  }
+
+  .top-left {
+    grid-area: top-left;
+    height: 600px;
+  }
+
+  .top-right {
+    grid-area: top-right;
+    height: 600px;
+  }
+
+  .center-left {
+    grid-area: center-left;
+    height: 600px;
+  }
+
+  .center-right {
+    grid-area: center-right;
+    height: 600px;
+  }
+
+  .bottom-left {
+    grid-area: bottom-left;
+    height: 600px;
+  }
+
+  .bottom-right {
+    grid-area: bottom-right;
+    height: 600px;
+  }
+
+  .testimonials {
+    grid-area: testimonials;
+    height: 777px;
+  }
+
+  .image-gallery {
+    grid-area: image-gallery;
+    height: 446px;
+  }
+
+  footer {
+    grid-area: footer;
+    height: 350px;
+  }
+
+  /* Other operations */
+  header {
+    background-image: url("./images/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    padding: 3rem 1.5rem;
+  }
+
+  .hamburger-menu {
     display: none;
   }
 
   .menu-desktop {
     display: block;
+  }
+
+  .menu-desktop ul {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    gap: 0.5rem;
+  }
+
+  .menu-desktop ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem;
+    line-height: 1.25rem;
+  }
+
+  .menu-desktop ul li a:hover {
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 0.8rem;
+    color: var(--grey-950);
+    cursor: pointer;
+  }
+
+  .menu-desktop ul li:nth-child(4) a {
+    background-color: var(--white);
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    line-height: 1.25rem;
+    color: var(--grey-950);
+    margin-left: 1rem;
+  }
+
+  .menu-desktop ul li:nth-child(4) a:hover {
+    background-color: var(--white-hover);
+    color: var(--white);
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    margin-top: 7rem;
+  }
+
+  .arrow img {
+    margin-top: 6rem;
   }
 }
