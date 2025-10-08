@@ -65,6 +65,10 @@ header {
   padding: 2rem 1.5rem;
 }
 
+.hamburger-menu {
+  display: block;
+}
+
 .hamburger-menu:hover {
   cursor: pointer;
 }
@@ -120,6 +124,10 @@ header {
 }
 
 .hidden {
+  display: none;
+}
+
+.menu-desktop {
   display: none;
 }
 
@@ -321,4 +329,18 @@ footer li a {
 
 .socials svg path {
   fill: var(--green-800);
+}
+
+@media (min-width: 1440px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: none;
+  }
+
+  .menu-desktop {
+    display: block;
+  }
 }
