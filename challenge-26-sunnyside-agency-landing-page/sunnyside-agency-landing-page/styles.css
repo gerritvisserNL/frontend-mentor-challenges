@@ -66,6 +66,11 @@ header {
   padding: 2rem 1.5rem;
 }
 
+.logo {
+  width: 124px;
+  height: auto;
+}
+
 .hamburger-menu {
   display: block;
 }
@@ -154,6 +159,8 @@ h1 {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -197,6 +204,7 @@ main {
   text-transform: uppercase;
   width: max-content;
   padding: 0 0.4rem;
+  cursor: pointer;
 }
 
 .top-left button::after,
@@ -212,8 +220,16 @@ main {
   z-index: -1;
 }
 
+.top-left button:hover::after {
+  background-color: var(--yellow-500);
+}
+
 .center-right button::after {
   background-color: var(--red-400-btn);
+}
+
+.center-right button:hover::after {
+  background-color: var(--red-400);
 }
 
 .center-left {
@@ -285,7 +301,7 @@ h4.author-name {
   color: var(--grey-550);
 }
 
-.image-gallery {
+.image-gallery-mobile {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -293,9 +309,13 @@ h4.author-name {
   width: 100%;
 }
 
-.image-gallery img {
+.image-gallery-mobile img {
   height: calc(375px / 2);
   width: calc(375px / 2);
+}
+
+.image-gallery-desktop {
+  display: none;
 }
 
 footer {
@@ -321,6 +341,10 @@ footer li a {
   color: var(--green-800);
 }
 
+footer li a:hover {
+  color: var(--white);
+}
+
 .socials {
   display: flex;
   justify-content: center;
@@ -328,78 +352,42 @@ footer li a {
   gap: 2rem;
 }
 
+.socials svg {
+  cursor: pointer;
+}
+
 .socials svg path {
   fill: var(--green-800);
 }
 
+.socials svg:hover path {
+  fill: var(--white);
+}
+
 @media (min-width: 1440px) {
   .wrapper {
+    width: 1440px;
+  }
+
+  main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 800px 600px 600px 600px 777px 446px 350px;
+    grid-template-rows: 600px 600px 600px 777px 447px;
     grid-template-areas:
-      "header header"
       "top-left top-right"
       "center-left center-right"
       "bottom-left bottom-right"
       "testimonials testimonials"
-      "image-gallery image-gallery"
-      "footer footer";
-    width: 1440px;
+      "image-gallery image-gallery";
+    width: 100%;
   }
 
-  /* Grid areas  */
   header {
-    grid-area: header;
+    height: 800px;
   }
 
-  .top-left {
-    grid-area: top-left;
-    height: 600px;
-  }
-
-  .top-right {
-    grid-area: top-right;
-    height: 600px;
-  }
-
-  .center-left {
-    grid-area: center-left;
-    height: 600px;
-  }
-
-  .center-right {
-    grid-area: center-right;
-    height: 600px;
-  }
-
-  .bottom-left {
-    grid-area: bottom-left;
-    height: 600px;
-  }
-
-  .bottom-right {
-    grid-area: bottom-right;
-    height: 600px;
-  }
-
-  .testimonials {
-    grid-area: testimonials;
-    height: 777px;
-  }
-
-  .image-gallery {
-    grid-area: image-gallery;
-    height: 446px;
-  }
-
-  footer {
-    grid-area: footer;
-    height: 350px;
-  }
-
-  /* Other operations */
   header {
+    background-image: none;
     background-image: url("./images/desktop/image-header.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -407,6 +395,12 @@ footer li a {
     width: 100%;
     height: 800px;
     padding: 3rem 1.5rem;
+  }
+
+  .logo {
+    width: 10rem;
+    height: auto;
+    margin-left: 1.5rem;
   }
 
   .hamburger-menu {
@@ -468,5 +462,100 @@ footer li a {
 
   .arrow img {
     margin-top: 6rem;
+  }
+
+  .top-left {
+    grid-area: top-left;
+    align-items: flex-start;
+    height: 600px;
+    padding: 9rem 7rem 0 8rem;
+    text-align: left;
+  }
+
+  .top-left h2 {
+    padding-right: 2rem;
+  }
+
+  .top-right {
+    grid-area: top-right;
+    height: 600px;
+    background-image: url("./images/desktop/image-transform.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .center-left {
+    grid-area: center-left;
+    height: 600px;
+    background-image: url("./images/desktop/image-stand-out.jpg");
+  }
+
+  .center-right {
+    grid-area: center-right;
+    align-items: flex-start;
+    height: 600px;
+    padding: 7.5rem 8rem 0 7rem;
+    text-align: left;
+  }
+
+  .bottom-left {
+    grid-area: bottom-left;
+    height: 600px;
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+    padding: 0 9rem 3rem;
+  }
+
+  .bottom-right {
+    grid-area: bottom-right;
+    height: 600px;
+    background-image: url("./images/desktop/image-photography.jpg");
+    padding: 0 9rem 3rem;
+  }
+
+  .testimonials {
+    grid-area: testimonials;
+    padding: 9rem 6rem;
+    height: 777px;
+  }
+
+  .testimonials h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .testimonials-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .testimonial {
+    width: 19.5rem;
+  }
+
+  .testimonial p {
+    margin: 2rem 0;
+  }
+
+  .image-gallery-mobile {
+    display: none;
+  }
+
+  .image-gallery-desktop {
+    grid-area: image-gallery;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    height: 447px;
+  }
+
+  .image-gallery img {
+    display: none;
+  }
+
+  footer {
+    height: 350px;
   }
 }
