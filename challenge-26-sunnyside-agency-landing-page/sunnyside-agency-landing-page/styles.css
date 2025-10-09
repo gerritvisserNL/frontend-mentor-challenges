@@ -73,10 +73,14 @@ header {
 
 .hamburger-menu {
   display: block;
+  cursor: pointer;
 }
 
-.hamburger-menu:hover {
-  cursor: pointer;
+button.hamburger-menu {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
 }
 
 .menu-mobile {
