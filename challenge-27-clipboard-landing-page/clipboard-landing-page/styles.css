@@ -1,7 +1,9 @@
 :root {
   /* Primary */
   --green-500: hsl(171, 66%, 44%);
+  --green-500-btn: hsl(171, 66%, 37%);
   --blue-100: hsl(233, 100%, 69%);
+  --blue-100-btn: hsl(233, 100%, 62%);
 
   /* Neutral */
   --gray-700: hsl(210, 10%, 33%);
@@ -15,4 +17,141 @@ html {
 
 body {
   font-family: "Bai Jamjuree", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  width: 100%;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  min-height: 100dvh;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+header svg {
+  width: 124px;
+  height: 124px;
+}
+
+main {
+  padding: 1.5rem;
+}
+/* 
+main p {
+  padding: 0 0.3rem;
+  font-size: 0.9rem;
+  color: var(--gray-500);
+} */
+
+/* Block */
+.clipboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Elements */
+.clipboard__title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.clipboard__description {
+  padding: 0 0.3rem;
+  font-size: 0.9rem;
+  color: var(--gray-500);
+}
+
+.clipboard__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Base element */
+.clipboard__button {
+  padding: 1rem;
+  border-style: none;
+  border-radius: 2rem;
+  font-weight: 600;
+  color: hsl(0, 100%, 100%);
+}
+
+/* Modifiers */
+.clipboard__button--ios {
+  background-color: var(--green-500);
+  border-bottom: 3.5px solid var(--green-500-btn);
+}
+
+.clipboard__button--mac {
+  background-color: var(--blue-100);
+  border-bottom: 3.5px solid var(--blue-100-btn);
+}
+
+/* Block */
+.snippets {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 10rem;
+}
+
+/* Elements */
+.snippets__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.snippets__description {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+}
+
+.snippets__image img {
+  margin: 3rem 0;
+}
+
+.snippets__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.snippets__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.snippets__item-title {
+  font-size: 1.25rem;
+  color: var(--gray-700);
+}
+
+.snippets__item-description {
+  font-size: 0.9rem;
+  color: var(--gray-500);
 }
