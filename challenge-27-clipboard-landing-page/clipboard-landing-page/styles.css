@@ -36,7 +36,7 @@ body {
   text-align: center;
 }
 
-header {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@ header {
   height: 300px;
 }
 
-header svg {
+.header__logo {
   width: 124px;
   height: 124px;
 }
@@ -55,12 +55,6 @@ header svg {
 main {
   padding: 1.5rem;
 }
-/* 
-main p {
-  padding: 0 0.3rem;
-  font-size: 0.9rem;
-  color: var(--gray-500);
-} */
 
 /* Block */
 .clipboard {
@@ -129,7 +123,7 @@ main p {
   color: var(--gray-500);
 }
 
-.snippets__image img {
+.snippets__image {
   margin: 3rem 0;
 }
 

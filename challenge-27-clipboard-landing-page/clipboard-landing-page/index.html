@@ -25,8 +25,12 @@
   <body>
     <div class="container">
       <div class="inner-container">
-        <header>
-          <svg viewBox="0 0 125 125" xmlns="http://www.w3.org/2000/svg">
+        <header class="header">
+          <svg
+            class="header__logo"
+            viewBox="0 0 125 125"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <title>Logo of Clipboard</title>
             <g
               stroke="#26BBA4"
@@ -73,58 +77,89 @@
             </p>
 
             <div class="snippets__content">
-              <picture class="snippets__image"
-                ><img
-                  src="./images/image-computer.png"
-                  alt="Computer monitor with
+              <img
+                class="snippets__image"
+                src="./images/image-computer.png"
+                alt="An iMac with
               a green checkmark icon"
-                />
-              </picture>
+              />
 
-              <div class="snippets__highlights">
-                <ul class="snippets__list">
-                  <li class="snippets__item">
-                    <h3 class="snippets__item-title">Quick Search</h3>
-                    <p class="snippets__item-description">
-                      Easily search your snippets by content, category, web
-                      address, application, and more.
-                    </p>
-                  </li>
-                  <li class="snippets__item">
-                    <h3 class="snippets__item-title">iCloud Sync</h3>
-                    <p class="snippets__item-description">
-                      Instantly saves and syncs snippets across all your
-                      devices.
-                    </p>
-                  </li>
-                  <li class="snippets__item">
-                    <h3 class="snippets__item-title">Complete History</h3>
-                    <p class="snippets__item-description">
-                      Retrieve any snippets from the first moment you started
-                      using the app.
-                    </p>
-                  </li>
-                </ul>
-              </div>
+              <ul class="snippets__list">
+                <li class="snippets__item">
+                  <h3 class="snippets__item-title">Quick Search</h3>
+                  <p class="snippets__item-description">
+                    Easily search your snippets by content, category, web
+                    address, application, and more.
+                  </p>
+                </li>
+                <li class="snippets__item">
+                  <h3 class="snippets__item-title">iCloud Sync</h3>
+                  <p class="snippets__item-description">
+                    Instantly saves and syncs snippets across all your devices.
+                  </p>
+                </li>
+                <li class="snippets__item">
+                  <h3 class="snippets__item-title">Complete History</h3>
+                  <p class="snippets__item-description">
+                    Retrieve any snippets from the first moment you started
+                    using the app.
+                  </p>
+                </li>
+              </ul>
             </div>
           </section>
-          <section>
-            <h2>Access Clipboard anywhere</h2>
-            <p>
+          <section class="access">
+            <h2 class="access__title">Access Clipboard anywhere</h2>
+            <p class="acces__description">
               Whether you're on the go, or at your computer, you can access all
               your Clipboard snippets in a few simple clicks.
             </p>
+            <img
+              class="access_image"
+              src="./images/image-devices.png"
+              alt="an ipad and iphone with
+            green checkmark icons"
+            />
           </section>
-          <section>
-            <h2>Supercharge your workflow</h2>
-            <p>We've got the tools to boost your productivity.</p>
+          <section class="workflow">
+            <h2 class="workflow__title">Supercharge your workflow</h2>
+            <p class="workflow__description">
+              We've got the tools to boost your productivity.
+            </p>
 
-            <ul>
-              Create blacklists Ensure sensitive information never makes its way
-              to your clipboard by excluding certain sources. Plain text
-              snippets Remove unwanted formatting from copied text for a
-              consistent look. Sneak preview Quick preview of all snippets on
-              your Clipboard for easy access.
+            <ul class="workflow__list">
+              <li class="workflow__item">
+                <svg
+                  class="workflow__item-icon"
+                  viewBox="0 0 44 40"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g fill="#9EABB2" fill-rule="nonzero">
+                    <path
+                      d="M11.07 0C8.353 0 6.14 2.192 6.14 4.876l-.179 25.278 2.69.02.179-25.289c0-1.21 1.005-2.196 2.24-2.196h27.027V0H11.071z"
+                    />
+                    <path
+                      d="M38.097 0a5.115 5.115 0 00-5.11 5.11v28.37c0 2.052-1.668 3.72-3.72 3.72a3.725 3.725 0 01-3.72-3.72V30.21c0-.743-.601-1.345-1.344-1.345H1.345C.602 28.864 0 29.466 0 30.21v3.272a6.417 6.417 0 006.41 6.409V37.2a3.724 3.724 0 01-3.72-3.72v-1.927h20.168v1.928a6.417 6.417 0 006.41 6.409 6.417 6.417 0 006.409-6.41V12.46h6.185c.743 0 1.345-.602 1.345-1.345V5.11A5.115 5.115 0 0038.097 0zm2.42 9.77h-4.84V5.11a2.423 2.423 0 012.42-2.42 2.423 2.423 0 012.42 2.42v4.66z"
+                    />
+                    <path
+                      d="M6.14 37.201h22.813v2.689H6.14zM19.99 7.485h-6.947a1.345 1.345 0 100 2.69h6.947a1.345 1.345 0 100-2.69zM28.057 12.863H13.043a1.345 1.345 0 100 2.69h15.014a1.345 1.345 0 100-2.69zM28.057 18.242H13.043a1.345 1.345 0 100 2.69h15.014a1.344 1.344 0 100-2.69zM28.057 23.62H13.043a1.345 1.345 0 100 2.69h15.014a1.345 1.345 0 100-2.69z"
+                    />
+                  </g>
+                </svg>
+                <h3 class="workflow__item-title">Create blacklists</h3>
+                <p class="workflow__item-description">
+                  Ensure sensitive information never makes its way to your
+                  clipboard by excluding certain sources.
+                </p>
+              </li>
+              <li class="workflow__item">
+                Plain text snippets Remove unwanted formatting from copied text
+                for a consistent look.
+              </li>
+              <li class="workflow__item">
+                Sneak preview Quick preview of all snippets on your Clipboard
+                for easy access.
+              </li>
             </ul>
           </section>
           <div class="logos"></div>
