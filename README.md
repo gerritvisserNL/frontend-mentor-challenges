@@ -40,6 +40,9 @@ This repository tracks my progress, solutions, and learnings.
 - | 22 | [Testimonials Grid Section](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/22-testimonials-grid-section) | [Code](./challenge-22-testimonials-grid-section)
 - | 23 | [Fylo Data Storage Component](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/23-fylo-data-storage-component) | [Code](./challenge-23-fylo-data-storage-component)
 - | 24 | [Bento Grid](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/24-bento-grid) | [Code](./challenge-24-bento-grid)
+- | 25 | [News Homepage](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/25-news-homepage) | [Code](./challenge-25-news-homepage)
+- | 26 | [Sunnyside Agency Landing Page](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/26-sunnyside-agency-landing-page) | [Code](./challenge-26-sunnyside-agency-landing-page)
+- | 27 | [Clipboard Landing Page](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/27-clipboard-landing-page) | [Code](./challenge-27-clipboard-landing-page)
 
 ## 🛠️ Tech Stack
 
@@ -51,7 +54,7 @@ This repository tracks my progress, solutions, and learnings.
 
 ## 📈 Progress
 
-- ✅ Completed: 24 / 60
+- ✅ Completed: 27 / 60
 - 🔄 In progress: 1
 - 🎯 Goal: Finish all 60 challenges
 
