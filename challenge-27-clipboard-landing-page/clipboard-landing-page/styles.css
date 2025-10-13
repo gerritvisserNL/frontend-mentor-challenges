@@ -18,6 +18,7 @@ html {
 
 body {
   font-family: "Bai Jamjuree", sans-serif;
+  background-color: hsl(0, 0%, 98%);
 }
 
 .container {
@@ -35,6 +36,8 @@ body {
   min-height: 100dvh;
   text-align: center;
   background-color: white;
+  border-left: 1px solid var(--gray-700);
+  border-right: 1px solid var(--gray-700);
 }
 
 .header {
@@ -344,8 +347,14 @@ main {
 }
 
 @media (min-width: 1200px) {
+  body {
+    background-color: hsl(0, 0%, 98%);
+  }
+
   .inner-container {
     min-width: 1440px;
+    border-left: 2px solid var(--gray-700);
+    border-right: 2px solid var(--gray-700);
   }
 
   .header {
