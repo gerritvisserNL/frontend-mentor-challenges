@@ -8,6 +8,7 @@
   /* Neutral */
   --gray-700: hsl(210, 10%, 33%);
   --gray-500: hsl(201, 11%, 66%);
+  --gray-300: hsl(201, 11%, 95%);
 }
 
 /* Typography */
@@ -22,7 +23,6 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
   min-height: 100dvh;
   width: 100%;
 }
@@ -34,6 +34,7 @@ body {
   width: 375px;
   min-height: 100dvh;
   text-align: center;
+  background-color: white;
 }
 
 .header {
@@ -41,10 +42,11 @@ body {
   justify-content: center;
   align-items: center;
   background-image: url("./images/bg-header-mobile.png");
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 300px;
+  height: 363px;
 }
 
 .header__logo {
@@ -53,17 +55,18 @@ body {
 }
 
 main {
-  padding: 1.5rem;
+  padding: 0 1.5rem 1.5rem;
+  margin-top: -2rem;
+  margin-bottom: 8rem;
 }
 
-/* Block */
 .clipboard {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 
-/* Elements */
 .clipboard__title {
   font-size: 1.7rem;
   font-weight: 600;
@@ -76,39 +79,55 @@ main {
   color: var(--gray-500);
 }
 
-.clipboard__buttons {
+/* Block */
+.download-buttons {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   width: 100%;
+  margin-top: 2rem;
 }
 
-/* Base element */
-.clipboard__button {
+/* Elements */
+.download-buttons__button {
   padding: 1rem;
   border-style: none;
   border-radius: 2rem;
   font-weight: 600;
   color: hsl(0, 100%, 100%);
+  width: 100%;
 }
 
 /* Modifiers */
-.clipboard__button--ios {
+.download-buttons__button--ios {
   background-color: var(--green-500);
   border-bottom: 3.5px solid var(--green-500-btn);
+  cursor: pointer;
 }
 
-.clipboard__button--mac {
+.download-buttons__button--ios:hover {
+  background-color: var(--green-500-btn);
+}
+
+.download-buttons__button--mac {
   background-color: var(--blue-100);
   border-bottom: 3.5px solid var(--blue-100-btn);
+  cursor: pointer;
+}
+
+.download-buttons__button--mac:hover {
+  background-color: var(--blue-100-btn);
 }
 
 /* Block */
 .snippets {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 /* Elements */
@@ -128,7 +147,6 @@ main {
 }
 
 .snippets__list {
-  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -138,6 +156,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .snippets__item-title {
@@ -148,4 +167,365 @@ main {
 .snippets__item-description {
   font-size: 0.9rem;
   color: var(--gray-500);
+}
+
+/* Block */
+.access {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 8rem;
+}
+
+/* Elements */
+.access__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.access__description {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+}
+
+.access__image {
+  margin: 3rem 0 4rem;
+}
+
+/* Block */
+.workflow {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.workflow__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.workflow__description {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+}
+
+.workflow__list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.workflow__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.workflow__item-icon {
+  width: 50px;
+  height: auto;
+}
+
+.workflow__item-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.workflow__item-description {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+}
+
+/* Modifier */
+.workflow__item-icon--blacklists {
+  margin-bottom: 1rem;
+}
+
+.workflow__item-icon--snippets {
+  width: 40px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.workflow__item-icon--preview {
+  margin-bottom: 1rem;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7rem 0 8rem;
+}
+
+.logos__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.download__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.download__description {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  padding: 0 0.5rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  width: 100%;
+  background-color: var(--gray-300);
+}
+
+.footer__logo {
+  width: 65px;
+  height: 65px;
+  margin: 0 0 3rem;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer__nav-link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--gray-700);
+  cursor: pointer;
+}
+
+.footer__nav-link:hover {
+  color: var(--green-500);
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.footer__social-icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--gray-700);
+}
+
+.footer__social-link:hover .footer__social-icon {
+  fill: var(--green-500);
+}
+
+@media (min-width: 1200px) {
+  .inner-container {
+    min-width: 1440px;
+  }
+
+  .header {
+    background-image: url("./images/bg-header-desktop.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  main {
+    padding: 0 0 1.5rem;
+    width: 100%;
+  }
+
+  .clipboard__title {
+    font-size: 2.5rem;
+  }
+
+  .clipboard__description {
+    font-size: 1.15rem;
+    max-width: 41rem;
+  }
+
+  .download-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .download-buttons__button {
+    width: 227px;
+    height: 53px;
+    padding: 0;
+  }
+
+  .snippets__title {
+    font-size: 1.9rem;
+  }
+
+  .snippets__description {
+    font-size: 1rem;
+    max-width: 40rem;
+  }
+
+  .snippets__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 5rem;
+    gap: 6rem;
+  }
+
+  .snippets__box {
+    width: 720px;
+    height: 572px;
+    overflow: hidden;
+  }
+
+  .snippets__image {
+    display: block;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    margin: 0;
+    padding: 0;
+  }
+
+  .snippets__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 4rem 0 5rem;
+    gap: 2.5rem;
+  }
+
+  .snippets__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .snippets__item-title {
+    font-size: 1.4rem;
+  }
+
+  .snippets__item-description {
+    max-width: 19.5rem;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+
+  .access__title {
+    font-size: 1.9rem;
+  }
+
+  .access__description {
+    font-size: 1rem;
+    max-width: 40rem;
+  }
+
+  .workflow__title {
+    font-size: 1.9rem;
+  }
+
+  .workflow__description {
+    font-size: 1rem;
+  }
+
+  .workflow__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .workflow__item-title {
+    font-size: 1.4rem;
+  }
+
+  .workflow__item-description {
+    font-size: 0.9rem;
+    max-width: 20rem;
+  }
+
+  .workflow__item-icon {
+    fill: var(--gray-700);
+  }
+
+  .logos__list {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .download__title {
+    font-size: 1.9rem;
+  }
+
+  .download__description {
+    font-size: 1rem;
+    max-width: 40rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer__logo {
+    width: 60px;
+    height: auto;
+    margin: auto 9rem;
+  }
+
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    row-gap: 0.5rem;
+    column-gap: 5rem;
+    margin-top: 2rem;
+    height: 100px;
+  }
+
+  .footer__nav-link {
+    font-size: 1.1rem;
+  }
+
+  .footer__socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0;
+    margin-left: 15rem;
+  }
 }
