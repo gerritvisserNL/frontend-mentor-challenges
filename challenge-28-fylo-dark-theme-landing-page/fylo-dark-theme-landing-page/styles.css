@@ -56,6 +56,10 @@ nav {
   background-color: var(--color-navy-850-bg-int-email);
 }
 
+.main {
+  position: relative;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -128,7 +132,7 @@ nav {
   color: var(--color-white);
 }
 
-.hero__button {
+.cta__button {
   margin-top: 2.5rem;
   padding: 1rem;
   width: 90%;
@@ -228,7 +232,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 3rem;
+  padding: 3rem 3rem 15rem;
   background-color: var(--color-navy-900-bg-main);
 }
 
@@ -280,5 +284,37 @@ nav {
 }
 
 .access {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  left: 50%;
+  bottom: 0%;
+  width: 90%;
   background-color: var(--color-navy-850-bg-int-email);
+  transform: translate(-50%, 50%);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.access__heading {
+  font-size: 1.3rem;
+}
+
+.access__input {
+  width: 100%;
+  font-size: 0.7rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  border-style: none;
+  margin-top: 1rem;
+}
+
+.footer {
+  background: var(--color-navy-950-bg-ftr);
+  width: 100%;
+  padding: 15rem 2rem 2rem;
 }
