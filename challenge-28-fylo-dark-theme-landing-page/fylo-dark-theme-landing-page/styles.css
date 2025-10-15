@@ -232,7 +232,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 3rem 3rem 15rem;
+  padding: 3rem 3rem 23rem;
   background-color: var(--color-navy-900-bg-main);
 }
 
@@ -285,18 +285,18 @@ nav {
 
 .access {
   position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  width: 90%;
+  padding: 2rem 2rem 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  left: 50%;
-  bottom: 0%;
-  width: 90%;
-  background-color: var(--color-navy-850-bg-int-email);
-  transform: translate(-50%, 50%);
-  padding: 2rem;
   text-align: center;
+  background-color: var(--color-navy-850-bg-int-email);
   border-radius: 0.5rem;
 }
 
@@ -307,14 +307,63 @@ nav {
 .access__input {
   width: 100%;
   font-size: 0.7rem;
-  padding: 1rem;
+  padding: 1rem 0 1rem 2rem;
   border-radius: 2rem;
   border-style: none;
   margin-top: 1rem;
+  line-height: 1.4rem;
+}
+
+.cta__button--access {
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 0.5rem;
 }
 
 .footer {
   background: var(--color-navy-950-bg-ftr);
   width: 100%;
-  padding: 15rem 2rem 2rem;
+  padding: 17rem 2rem 2rem;
+}
+
+.footer__logo {
+  width: 12rem;
+  height: auto;
+  margin-bottom: 3rem;
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.footer__contact-line {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__contact-icon {
+  width: 1.5rem;
+}
+
+.footer__icon--location {
+  width: 13px;
+  height: auto;
+}
+
+.footer__icon--phone {
+  width: 13px;
+  height: auto;
+}
+
+.footer__icon--email {
+  width: 20px;
+  height: auto;
+}
+
+.footer__contact-link {
+  text-decoration: none;
+  color: var(--color-white);
 }
