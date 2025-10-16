@@ -54,6 +54,11 @@ h6 {
   overflow-wrap: break-word;
 }
 
+/* 6b. Reset address styling */
+address {
+  font-style: normal;
+}
+
 /* 7. Remove list styles */
 ul,
 ol {

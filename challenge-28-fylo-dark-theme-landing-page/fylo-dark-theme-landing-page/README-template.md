@@ -67,6 +67,24 @@ voeg viewBox="" toe
 Voeg <title> toe als het toegankelijk moet zijn.
 Gebruik fill="currentColor" voor kleurcontrole via CSS.
 
+---
+
+.footer\_\_list li:nth-of-type(4) {
+margin-bottom: 2.5rem;
+}
+
+---
+
+.access {
+position: absolute;
+left: 50%;
+bottom: 0;
+transform: translate(-50%, 50%);
+width: 90%;
+}
+
+---
+
 ### Built with
 
 - Semantic HTML5 markup
