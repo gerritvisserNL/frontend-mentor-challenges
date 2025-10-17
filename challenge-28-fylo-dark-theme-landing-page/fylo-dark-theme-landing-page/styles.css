@@ -9,6 +9,7 @@
   --color-teal-200: hsl(176, 68%, 64%);
   --color-cyan-500: hsl(198, 60%, 50%);
   --color-red-500: hsl(0, 100%, 63%);
+  --color-green-500: hsl(145, 45%, 45%);
 
   /* Neutral Colors */
   --color-white: hsl(0, 0%, 100%);
@@ -332,6 +333,31 @@ nav {
   border-style: none;
   margin-top: 1rem;
   line-height: 1.4rem;
+  color: var(--color-navy-850-bg-int-email);
+}
+
+.access__error {
+  position: absolute;
+  display: block;
+  top: 16.5rem;
+  left: 4rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-red-500);
+}
+
+.access__success {
+  position: absolute;
+  display: block;
+  top: 11.5rem;
+  left: 2.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-green-500);
+}
+
+.hidden {
+  display: none;
 }
 
 .cta__button--access {
@@ -408,6 +434,11 @@ nav {
   font-size: 1.2rem;
   text-decoration: none;
   color: var(--color-white);
+  cursor: pointer;
+}
+
+.footer__item-link:hover {
+  font-weight: 700;
 }
 
 .footer__list li:nth-of-type(4) {
@@ -430,6 +461,12 @@ nav {
   border-radius: 50%;
   color: var(--color-white);
   padding: 5px;
+  cursor: pointer;
+}
+
+.socials__logo:hover {
+  border: 1px solid var(--color-teal-200);
+  color: var(--color-teal-200);
 }
 
 .socials__logo--instagram {

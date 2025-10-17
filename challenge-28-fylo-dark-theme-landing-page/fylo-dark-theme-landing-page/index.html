@@ -401,7 +401,7 @@
               </div>
             </div>
           </section>
-          <form class="access">
+          <form class="access" novalidate>
             <h2 class="access__heading">Get early access today</h2>
             <p class="access__text">
               It only takes a minute to sign up and our free starter tier is
@@ -415,6 +415,12 @@
               aria-label="email address"
               required
             />
+            <p class="access__error hidden">
+              Please enter a valid email address
+            </p>
+            <p class="access__success hidden">
+              Your email address has been succesfully submitted!
+            </p>
             <button
               type="submit"
               class="cta__button cta__button--access"
