@@ -58,6 +58,7 @@ nav {
 
 .main {
   position: relative;
+  width: 100%;
 }
 
 .header {
@@ -269,7 +270,7 @@ nav {
   display: flex;
   flex-direction: column;
   background-color: var(--color-navy-800-bg-tstm);
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   padding: 1.5rem;
   gap: 1.25rem;
 }
@@ -471,4 +472,173 @@ nav {
 
 .socials__logo--instagram {
   padding: 4px;
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 17px;
+  }
+
+  .inner-container {
+    width: 1440px;
+  }
+
+  .header {
+    padding: 5rem 5rem 4rem;
+  }
+
+  .header__logo {
+    width: 175px;
+    height: auto;
+  }
+
+  .header__nav-list {
+    gap: 3rem;
+  }
+
+  .intro {
+    width: 100%;
+    height: auto;
+    padding-bottom: 6rem;
+    /* background-color: blue; */
+  }
+
+  .intro__illustration {
+    width: 50%;
+  }
+
+  .hero {
+    padding: 0;
+  }
+
+  .hero-bg-top {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    background-image: url("./images/bg-curvy-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    width: 100%;
+    height: 500px;
+  }
+
+  .hero__title {
+    position: absolute;
+    top: -9rem;
+    font-size: 2.35rem;
+    max-width: 45rem;
+  }
+
+  .hero__description {
+    position: absolute;
+    top: 6.5rem;
+    max-width: 34rem;
+    font-size: 1.1rem;
+  }
+
+  .cta__button {
+    position: absolute;
+    top: 11.5rem;
+    width: 18%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .highlights {
+    padding-bottom: 3rem;
+  }
+
+  .highlights__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 7rem;
+  }
+
+  .highlights__item {
+    width: 25rem;
+  }
+
+  .highlights__list li:nth-of-type(2) {
+    width: 27.5rem;
+  }
+
+  .highlights__list li:nth-of-type(3) {
+    width: 27.5rem;
+  }
+
+  .highlights__icon {
+    height: 80px;
+    width: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .highlights__icon--security {
+    height: 90px;
+    width: auto;
+  }
+
+  .productive {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5rem;
+  }
+
+  .productive__image {
+    width: 590px;
+  }
+
+  .productive__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+    width: 44%;
+  }
+
+  .productive__heading {
+    font-size: 2.7rem;
+    line-height: 3rem;
+  }
+
+  .productive__description {
+    font-size: 0.95rem;
+  }
+
+  .productive__link {
+    font-size: 0.95rem;
+    width: 174px;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 10rem 20rem;
+    width: 100%;
+  }
+
+  .testimonials__quotes {
+    position: absolute;
+    top: 1.1rem;
+    left: 9.5rem;
+    height: 50px;
+    width: 50px;
+  }
+
+  .testimonials__item {
+    z-index: 1;
+  }
 }
