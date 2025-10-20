@@ -411,26 +411,29 @@
               extremely generous. If you have any questions, our support team
               would be happy to help you.
             </p>
-            <input
-              type="email"
-              placeholder="email@example.com"
-              class="access__input"
-              aria-label="email address"
-              required
-            />
+            <div class="access__form">
+              <input
+                type="email"
+                placeholder="email@example.com"
+                class="access__input"
+                aria-label="email address"
+                required
+              />
+
+              <button
+                type="submit"
+                class="cta__button cta__button--access"
+                aria-label="submit form button"
+              >
+                Get Started For Free
+              </button>
+            </div>
             <p class="access__error hidden">
               Please enter a valid email address
             </p>
             <p class="access__success hidden">
               Your email address has been succesfully submitted!
             </p>
-            <button
-              type="submit"
-              class="cta__button cta__button--access"
-              aria-label="submit form button"
-            >
-              Get Started For Free
-            </button>
           </form>
         </main>
         <footer class="footer">

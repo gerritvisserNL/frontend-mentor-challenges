@@ -85,6 +85,10 @@ width: 90%;
 
 ---
 
+I had to set position: static on my `.cta__button--access` because it was inheriting absolute from `.cta__button`. By making it static, I put the button back into the normal flow, so it aligns correctly next to the input in the flex container without overlapping.
+
+---
+
 ### Built with
 
 - Semantic HTML5 markup
