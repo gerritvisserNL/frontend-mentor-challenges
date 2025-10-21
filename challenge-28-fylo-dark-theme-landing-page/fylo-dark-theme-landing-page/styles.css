@@ -26,7 +26,7 @@ html {
 body {
   font-family: var(--font-body);
   color: var(--color-white);
-  background-color: black;
+  background-color: white;
 }
 
 h1,
@@ -401,6 +401,10 @@ nav {
   margin-bottom: 3rem;
 }
 
+.footer__logo-link {
+  color: var(--color-white);
+}
+
 .footer__address {
   display: flex;
   flex-direction: column;
@@ -450,10 +454,12 @@ nav {
   flex-direction: column;
   gap: 1rem;
 }
+
 .footer__list {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .footer__item-link {
@@ -466,10 +472,6 @@ nav {
 
 .footer__item-link:hover {
   font-weight: 700;
-}
-
-.footer__list li:nth-of-type(4) {
-  margin-bottom: 2.5rem;
 }
 
 .socials {
@@ -792,29 +794,33 @@ nav {
     transform: translateY(-2px);
   }
 
-  .footer__list {
+  .footer__nav {
     display: flex;
     flex-direction: row;
     gap: 4rem;
-    width: 17rem;
   }
 
-  .footer__list li:nth-of-type(4) {
-    margin-bottom: 0;
+  .footer__item {
+    display: block;
+  }
+
+  .footer__item-link {
+    display: inline-block;
+    vertical-align: middle;
   }
 
   .footer__column-left {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 10rem;
+    width: 6rem;
   }
 
   .footer__column-right {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 10rem;
+    width: 7rem;
   }
 
   .socials {
