@@ -21,9 +21,9 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 
 ## My process
 
-Door inline-svg's in HTML te zetten, kan de HTML erg lang worden. Dit kan voorkomen worden door alle svg bestanden in een svg sprite (.svg bestand) te zetten.
+By placing inline SVGs directly in the HTML, the HTML file can become quite large. This can be avoided by storing all SVG files in an SVG sprite (.svg file).
 
-Voorbeeld
+Example:
 
 icons.svg:
 `<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -62,18 +62,14 @@ fill: pink;
 fill: gold;
 }
 
-✅ veranderen aan svg
-voeg viewBox="" toe
-Voeg <title> toe als het toegankelijk moet zijn.
-Gebruik fill="currentColor" voor kleurcontrole via CSS.
+✅ changes to svg
+Add viewBox=""
+Add <title> for screenreaders.
+Use fill="currentColor" for controle over colors via CSS.
 
 ---
 
-.footer\_\_list li:nth-of-type(4) {
-margin-bottom: 2.5rem;
-}
-
----
+This code places an element at the bottom center of its parent, makes it 90% as wide as the parent, and offsets it slightly below the bottom edge:
 
 .access {
 position: absolute;
@@ -86,6 +82,10 @@ width: 90%;
 ---
 
 I had to set position: static on my `.cta__button--access` because it was inheriting absolute from `.cta__button`. By making it static, I put the button back into the normal flow, so it aligns correctly next to the input in the flex container without overlapping.
+
+---
+
+Reminder: an ul element may not contain a div element.
 
 ---
 
