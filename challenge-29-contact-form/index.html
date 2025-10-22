@@ -21,11 +21,58 @@
     <script type="module" src="/src/main.js" defer></script>
   </head>
   <body>
-    Contact Us First Name This field is required Last Name This field is
-    required Email Address Please enter a valid email address This field is
-    required Query Type General Enquiry Support Request Please select a query
-    type Message This field is required I consent to being contacted by the team
-    To submit this form, please consent to being contacted Submit Message Sent!
-    Thanks for completing the form. We'll be in touch soon!
+    <div class="container">
+      <form class="form" type="submmit">
+        <h1 class="heading">Contact Us</h1>
+
+        <label for="firstname" class="form__firstname"
+          >First Name <span>*</span></label
+        >
+        <input type="text" id="firstname" name="firstname" required />
+        <p class="required-firstname">This field is required</p>
+
+        <label for="lastname">Last Name <span>*</span></label>
+        <input type="text" id="lastname" name="lastname" required />
+        <p class="required-lastname">This field is required</p>
+
+        <label for="email">Email Address <span>*</span></label>
+        <input type="email" id="email" name="email" required />
+        <p class="valid-email">Please enter a valid email address</p>
+        <p class="required-email">This field is required</p>
+
+        <p class="query-heading">Query Type <span>*</span></p>
+        <label class="input-general">
+          <input type="radio" name="query" value="general" />General Enquiry
+        </label>
+        <label class="input-request">
+          <input type="radio" name="query" value="support" />Support Request
+        </label>
+        <p class="required-query">Please select a query type</p>
+
+        <label for="message">Message <span>*</span></label>
+        <textarea
+          id="message"
+          name="message"
+          rows="10"
+          cols="50"
+          placeholder=""
+          required
+        ></textarea>
+        <p class="required-message">This field is required</p>
+
+        <label
+          ><input type="checkbox" name="consent" required />I consent to being
+          contacted by the team <span>*</span></label
+        >
+        <p class="required-consent">
+          To submit this form, please consent to being contacted
+        </p>
+
+        <button type="submit">Submit</button>
+        <p class="succes-message">
+          Message Sent! Thanks for completing the form. We'll be in touch soon!
+        </p>
+      </form>
+    </div>
   </body>
 </html>
