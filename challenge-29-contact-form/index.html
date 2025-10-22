@@ -37,8 +37,8 @@
 
         <label for="email">Email Address <span>*</span></label>
         <input type="email" id="email" name="email" required />
-        <p class="valid-email">Please enter a valid email address</p>
         <p class="required-email">This field is required</p>
+        <p class="valid-email hidden">Please enter a valid email address</p>
 
         <p class="query-heading">Query Type <span>*</span></p>
         <label class="input-general">
@@ -60,10 +60,10 @@
         ></textarea>
         <p class="required-message">This field is required</p>
 
-        <label
-          ><input type="checkbox" name="consent" required />I consent to being
-          contacted by the team <span>*</span></label
-        >
+        <label class="checkbox">
+          <input type="checkbox" name="consent" required />
+          <p>I consent to being contacted by the team <span>*</span></p>
+        </label>
         <p class="required-consent">
           To submit this form, please consent to being contacted
         </p>
