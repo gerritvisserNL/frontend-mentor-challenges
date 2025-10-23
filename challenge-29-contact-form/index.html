@@ -17,7 +17,6 @@
     />
 
     <title>Frontend Mentor | Contact form</title>
-
     <script type="module" src="/src/main.js" defer></script>
   </head>
   <body>
@@ -25,9 +24,8 @@
       <form class="form" novalidate>
         <h1 class="heading">Contact Us</h1>
 
-        <label for="firstname" class="firstname"
-          >First Name <span>*</span></label
-        >
+        <!-- First Name -->
+        <label for="firstname">First Name <span>*</span></label>
         <input
           type="text"
           id="firstname"
@@ -36,10 +34,11 @@
           aria-describedby="error-firstname"
           autocomplete="given-name"
         />
-        <p id="error-firstname" class="required-firstname" role="alert">
+        <p id="error-firstname" class="required" role="alert">
           This field is required
         </p>
 
+        <!-- Last Name -->
         <label for="lastname">Last Name <span>*</span></label>
         <input
           type="text"
@@ -49,22 +48,23 @@
           aria-describedby="error-lastname"
           autocomplete="family-name"
         />
-        <p id="error-lastname" class="required-lastname" role="alert">
+        <p id="error-lastname" class="required" role="alert">
           This field is required
         </p>
 
+        <!-- Email -->
         <label for="email">Email Address <span>*</span></label>
         <input
           type="email"
           id="email"
           name="email"
           required
-          aria-describedby="error-email"
+          aria-describedby="error-email-required"
         />
-        <p id="error-email" class="required-email" role="alert">
+        <p id="error-email-required" class="required" role="alert">
           This field is required
         </p>
-        <p id="error-email" class="valid-email hidden" role="alert">
+        <p id="error-email-invalid" class="invalid-email hidden" role="alert">
           Please enter a valid email address
         </p>
 
@@ -80,24 +80,25 @@
         <label class="input-request">
           <input type="radio" name="query" value="support" />Support Request
         </label>
-        <p id="error-query" class="required-query" role="alert">
+        <p id="error-query" class="required" role="alert">
           Please select a query type
         </p>
 
+        <!-- Message -->
         <label for="message">Message <span>*</span></label>
         <textarea
           id="message"
           name="message"
           rows="10"
-          cols="50"
           placeholder=""
           required
           aria-describedby="error-message"
         ></textarea>
-        <p id="error-message" class="required-message" role="alert">
+        <p id="error-message" class="required" role="alert">
           This field is required
         </p>
 
+        <!-- Consent Checkbox -->
         <label class="checkbox">
           <input
             type="checkbox"
@@ -109,12 +110,15 @@
             I consent to being contacted by the team <span>*</span>
           </span>
         </label>
-        <p id="error-consent" class="required-consent" role="alert">
+        <p id="error-consent" class="required" role="alert">
           To submit this form, please consent to being contacted
         </p>
 
+        <!-- Submit Button -->
         <button type="submit">Submit</button>
-        <div class="success-message-box">
+
+        <!-- Success Message -->
+        <div class="success-message-box" aria-live="polite">
           <div class="success-message-wrapper">
             <svg
               class="success-message-icon"

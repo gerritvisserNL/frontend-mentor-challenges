@@ -123,6 +123,7 @@ textarea {
   padding: 1rem;
   border: 1px solid var(--color-grey-500);
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 textarea:focus {
@@ -130,12 +131,7 @@ textarea:focus {
   border: 1px solid var(--color-green-600);
 }
 
-.required-firstname,
-.required-lastname,
-.required-email,
-.required-query,
-.required-message,
-.required-consent {
+.required {
   visibility: visible;
   font-size: 0.8rem;
   color: var(--color-red);
@@ -145,7 +141,7 @@ textarea:focus {
   visibility: visible;
 }
 
-.valid-email {
+.invalid-email {
   font-size: 0.8rem;
   color: var(--color-red);
 }
