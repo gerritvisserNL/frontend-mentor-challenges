@@ -22,32 +22,67 @@
   </head>
   <body>
     <div class="container">
-      <form class="form" type="submmit" novalidate>
+      <form class="form" novalidate>
         <h1 class="heading">Contact Us</h1>
 
-        <label for="firstname" class="form__firstname"
+        <label for="firstname" class="firstname"
           >First Name <span>*</span></label
         >
-        <input type="text" id="firstname" name="firstname" required />
-        <p class="required-firstname">This field is required</p>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          required
+          aria-describedby="error-firstname"
+          autocomplete="given-name"
+        />
+        <p id="error-firstname" class="required-firstname" role="alert">
+          This field is required
+        </p>
 
         <label for="lastname">Last Name <span>*</span></label>
-        <input type="text" id="lastname" name="lastname" required />
-        <p class="required-lastname">This field is required</p>
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          required
+          aria-describedby="error-lastname"
+          autocomplete="family-name"
+        />
+        <p id="error-lastname" class="required-lastname" role="alert">
+          This field is required
+        </p>
 
         <label for="email">Email Address <span>*</span></label>
-        <input type="email" id="email" name="email" required />
-        <p class="required-email">This field is required</p>
-        <p class="valid-email hidden">Please enter a valid email address</p>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          aria-describedby="error-email"
+        />
+        <p id="error-email" class="required-email" role="alert">
+          This field is required
+        </p>
+        <p id="error-email" class="valid-email hidden" role="alert">
+          Please enter a valid email address
+        </p>
 
         <p class="query-heading">Query Type <span>*</span></p>
         <label class="input-general">
-          <input type="radio" name="query" value="general" />General Enquiry
+          <input
+            type="radio"
+            name="query"
+            value="general"
+            aria-describedby="error-query"
+          />General Enquiry
         </label>
         <label class="input-request">
           <input type="radio" name="query" value="support" />Support Request
         </label>
-        <p class="required-query">Please select a query type</p>
+        <p id="error-query" class="required-query" role="alert">
+          Please select a query type
+        </p>
 
         <label for="message">Message <span>*</span></label>
         <textarea
@@ -57,35 +92,45 @@
           cols="50"
           placeholder=""
           required
+          aria-describedby="error-message"
         ></textarea>
-        <p class="required-message">This field is required</p>
+        <p id="error-message" class="required-message" role="alert">
+          This field is required
+        </p>
 
         <label class="checkbox">
-          <input type="checkbox" name="consent" required />
-          <p>I consent to being contacted by the team <span>*</span></p>
+          <input
+            type="checkbox"
+            name="consent"
+            required
+            aria-describedby="error-consent"
+          />
+          <span class="consent-text">
+            I consent to being contacted by the team <span>*</span>
+          </span>
         </label>
-        <p class="required-consent">
+        <p id="error-consent" class="required-consent" role="alert">
           To submit this form, please consent to being contacted
         </p>
 
         <button type="submit">Submit</button>
-        <div class="succes-message-box">
-          <div class="succes-message-wrapper">
+        <div class="success-message-box">
+          <div class="success-message-wrapper">
             <svg
-              class="succes-message-icon"
+              class="success-message-icon"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 20 21"
             >
-              <title>Succes Message Icon</title>
+              <title>Success Message Icon</title>
               <path
                 fill="currentColor"
                 d="M14.28 7.72a.748.748 0 0 1 0 1.06l-5.25 5.25a.748.748 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.75.75 0 0 1 1.06 0Zm5.47 2.78A9.75 9.75 0 1 1 10 .75a9.76 9.76 0 0 1 9.75 9.75Zm-1.5 0A8.25 8.25 0 1 0 10 18.75a8.26 8.26 0 0 0 8.25-8.25Z"
               />
             </svg>
-            <p class="succes-message-heading">Message Sent!</p>
+            <p class="success-message-heading">Message Sent!</p>
           </div>
-          <p class="succes-message-text">
+          <p class="success-message-text">
             Thanks for completing the form. We'll be in touch soon!
           </p>
         </div>
