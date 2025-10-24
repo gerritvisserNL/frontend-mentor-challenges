@@ -136,17 +136,20 @@ textarea:focus {
   color: var(--color-red);
 }
 
-error.show {
+.error.show {
   visibility: visible;
 }
 
-.invalid-email {
-  font-size: 0.8rem;
-  color: var(--color-red);
+.error-email-wrapper {
+  position: relative;
 }
 
-.invalid-email.hidden {
-  display: none;
+.invalid-email {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.8rem;
+  color: var(--color-red);
 }
 
 .checkbox {
@@ -184,7 +187,7 @@ button:hover {
 }
 
 .success-message-box {
-  display: none;
+  display: block;
   position: absolute;
   width: calc(375px - 5rem);
   padding: 1.5rem;
@@ -211,4 +214,8 @@ button:hover {
 
 .success-message-text {
   font-size: 1rem;
+}
+
+.hidden {
+  display: none;
 }

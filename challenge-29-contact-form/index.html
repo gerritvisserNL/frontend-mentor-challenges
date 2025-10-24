@@ -61,13 +61,14 @@
           required
           aria-describedby="error-email-required"
         />
-        <p id="error-email-required" class="error" role="alert">
-          This field is required
-        </p>
-        <p id="error-email-invalid" class="invalid-email hidden" role="alert">
-          Please enter a valid email address
-        </p>
-
+        <div class="error-email-wrapper">
+          <p id="error-email-required" class="error" role="alert">
+            This field is required
+          </p>
+          <p id="error-email-invalid" class="invalid-email hidden" role="alert">
+            Please enter a valid email address
+          </p>
+        </div>
         <p class="query-heading">Query Type <span>*</span></p>
         <label class="input-general">
           <input
@@ -118,7 +119,7 @@
         <button type="submit">Submit</button>
 
         <!-- Success Message -->
-        <div class="success-message-box" aria-live="polite">
+        <div class="success-message-box hidden" aria-live="polite">
           <div class="success-message-wrapper">
             <svg
               class="success-message-icon"

@@ -2,7 +2,7 @@ import "./reset.css";
 import "./style.css";
 
 // Form
-const form = document.querySelector(".form");
+const form = document.querySelector("form");
 
 // Input
 const inputFirstName = document.getElementById("firstname");
@@ -26,7 +26,7 @@ const successMessage = document.querySelector(".success-message-box");
 
 // Email validation
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-isValidEmail = (email) => emailPattern.test(email.trim());
+const isValidEmail = (email) => emailPattern.test(email.trim());
 
 // Hide all errors
 const hideAllErrors = () => {
@@ -39,7 +39,7 @@ const hideAllErrors = () => {
     errorConsent,
   ].forEach((error) => error.classList.remove("show"));
 
-  // Only Email error needs .hidden
+  // Only email error needs .hidden
   errorEmailInvalid.classList.add("hidden");
 };
 
@@ -89,3 +89,22 @@ const validateForm = () => {
 
   return isValid;
 };
+
+// Show success message
+const showSucces = () => {
+  successMessage.classList.remove("hidden");
+  form.reset();
+
+  setTimeout(() => {
+    successMessage.classList.add("hidden");
+  }, 3000);
+};
+
+// Send Form
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const formIsValid = validateForm();
+
+  if (formIsValid) showSucces();
+});
