@@ -47,6 +47,9 @@ const hideAllErrors = () => {
 const validateForm = () => {
   let isValid = true;
 
+  hideAllErrors();
+  successMessage.classList.remove("show");
+
   if (inputFirstName.value.trim() === "") {
     errorFirstName.classList.add("show");
     isValid = false;
@@ -67,4 +70,22 @@ const validateForm = () => {
     errorEmailInvalid.classList.remove("hidden");
     isValid = false;
   }
+
+  const isQuerySelected = [...queryInputs].some((radio) => radio.checked);
+  if (!isQuerySelected) {
+    errorQuery.classList.add("show");
+    isValid = false;
+  }
+
+  if (inputMessage.value.trim() === "") {
+    errorMessage.classList.add("show");
+    isValid = false;
+  }
+
+  if (!inputCheckbox.checked) {
+    errorConsent.classList.add("show");
+    isValid = false;
+  }
+
+  return isValid;
 };
