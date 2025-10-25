@@ -21,8 +21,8 @@
   </head>
   <body>
     <div class="container">
-      <form class="form" novalidate>
-        <h1 class="heading">Contact Us</h1>
+      <form novalidate>
+        <h1 class="form-heading">Contact Us</h1>
 
         <!-- First Name -->
         <label for="firstname">First Name <span>*</span></label>
@@ -69,21 +69,25 @@
             Please enter a valid email address
           </p>
         </div>
-        <p class="query-heading">Query Type <span>*</span></p>
-        <label class="input-general">
-          <input
-            type="radio"
-            name="query"
-            value="general"
-            aria-describedby="error-query"
-          />General Enquiry
-        </label>
-        <label class="input-request">
-          <input type="radio" name="query" value="support" />Support Request
-        </label>
-        <p id="error-query" class="error" role="alert">
-          Please select a query type
-        </p>
+
+        <!-- Query Type -->
+        <fieldset>
+          <legend>Query Type <span>*</span></legend>
+          <label class="query-option--general">
+            <input
+              type="radio"
+              name="query"
+              value="general"
+              aria-describedby="error-query"
+            />General Enquiry
+          </label>
+          <label class="query-option--request">
+            <input type="radio" name="query" value="support" />Support Request
+          </label>
+          <p id="error-query" class="error" role="alert">
+            Please select a query type
+          </p>
+        </fieldset>
 
         <!-- Message -->
         <label for="message">Message <span>*</span></label>
@@ -100,7 +104,7 @@
         </p>
 
         <!-- Consent Checkbox -->
-        <label class="checkbox">
+        <label class="checkbox-label">
           <input
             type="checkbox"
             name="consent"
