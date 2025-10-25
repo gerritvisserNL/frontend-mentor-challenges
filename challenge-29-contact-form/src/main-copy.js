@@ -4,24 +4,24 @@ import "./style.css";
 // Form
 const form = document.querySelector("form");
 
-// Inputs
-const inputFirstName = document.querySelector("#firstname");
-const inputLastName = document.querySelector("#lastname");
-const inputEmail = document.querySelector("#email");
-const queryInputs = document.querySelectorAll('input[name="query"]');
-const inputMessage = document.querySelector("#message");
-const inputCheckbox = document.querySelector('input[type="checkbox"]');
+// Input
+const inputFirstName = document.getElementById("firstname");
+const inputLastName = document.getElementById("lastname");
+const inputEmail = document.getElementById("email");
+const queryInputs = document.querySelectorAll(`input[name="query"]`);
+const inputMessage = document.getElementById("message");
+const inputCheckbox = document.querySelector(`input[type="checkbox"]`);
 
-// Errors
-const errorFirstName = document.querySelector("#error-firstname");
-const errorLastName = document.querySelector("#error-lastname");
-const errorEmailRequired = document.querySelector("#error-email-required");
-const errorEmailInvalid = document.querySelector("#error-email-invalid");
-const errorQuery = document.querySelector("#error-query");
-const errorMessage = document.querySelector("#error-message");
-const errorCheckbox = document.querySelector("#error-checkbox");
+// Error
+const errorFirstName = document.getElementById("error-firstname");
+const errorLastName = document.getElementById("error-lastname");
+const errorEmailRequired = document.getElementById("error-email-required");
+const errorEmailInvalid = document.getElementById("error-email-invalid");
+const errorQuery = document.getElementById("error-query");
+const errorMessage = document.getElementById("error-message");
+const errorConsent = document.getElementById("error-consent");
 
-// Success
+// Succes
 const successMessage = document.querySelector(".success-message-box");
 
 // Email validation
@@ -36,10 +36,10 @@ const hideAllErrors = () => {
     errorEmailRequired,
     errorQuery,
     errorMessage,
-    errorCheckbox,
+    errorConsent,
   ].forEach((error) => error.classList.remove("show"));
 
-  // Only error-email-invalid error needs .hidden
+  // Only email error needs .hidden
   errorEmailInvalid.classList.add("hidden");
 };
 
@@ -48,7 +48,7 @@ const validateForm = () => {
   let isValid = true;
 
   hideAllErrors();
-  successMessage.classList.add("hidden");
+  successMessage.classList.remove("show");
 
   if (inputFirstName.value.trim() === "") {
     errorFirstName.classList.add("show");
@@ -83,7 +83,7 @@ const validateForm = () => {
   }
 
   if (!inputCheckbox.checked) {
-    errorCheckbox.classList.add("show");
+    errorConsent.classList.add("show");
     isValid = false;
   }
 

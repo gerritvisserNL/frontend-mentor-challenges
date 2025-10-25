@@ -65,7 +65,11 @@
           <p id="error-email-required" class="error" role="alert">
             This field is required
           </p>
-          <p id="error-email-invalid" class="invalid-email hidden" role="alert">
+          <p
+            id="error-email-invalid"
+            class="error-email-invalid hidden"
+            role="alert"
+          >
             Please enter a valid email address
           </p>
         </div>
@@ -109,13 +113,13 @@
             type="checkbox"
             name="consent"
             required
-            aria-describedby="error-consent"
+            aria-describedby="error-checkbox"
           />
           <span class="consent-text">
             I consent to being contacted by the team <span>*</span>
           </span>
         </label>
-        <p id="error-consent" class="error" role="alert">
+        <p id="error-checkbox" class="error" role="alert">
           To submit this form, please consent to being contacted
         </p>
 
