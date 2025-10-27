@@ -1,0 +1,60 @@
+:root {
+  /* Primary */
+  --clr-red-500: hsl(10, 79%, 65%);
+  --clr-blue-300: hsl(186, 34%, 65%);
+
+  /* Neutral */
+  --clr-brown-950: hsl(25, 47%, 15%);
+  --clr-brown-400: hsl(28, 10%, 53%);
+  --clr-red-100: hsl(26, 66%, 93%);
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  background-color: var(--clr-brown-400);
+}
+
+.expenses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 343px;
+}
+
+.expenses__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--clr-red-500);
+  padding: 1.1rem;
+  border-radius: 1rem;
+}
+
+.expenses__balance {
+  display: block;
+}
+
+.expenses__balance-info {
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(0, 100%, 100%);
+}
+
+.expenses__balance-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(0, 100%, 100%);
+}
