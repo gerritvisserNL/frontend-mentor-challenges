@@ -43,6 +43,8 @@ This repository tracks my progress, solutions, and learnings.
 - | 25 | [News Homepage](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/25-news-homepage) | [Code](./challenge-25-news-homepage)
 - | 26 | [Sunnyside Agency Landing Page](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/26-sunnyside-agency-landing-page) | [Code](./challenge-26-sunnyside-agency-landing-page)
 - | 27 | [Clipboard Landing Page](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/27-clipboard-landing-page) | [Code](./challenge-27-clipboard-landing-page)
+- | 28 | [Fylo Dark Theme Landing Page](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/28-fylo-dark-theme-landing-page) | [Code](./challenge-28-fylo-dark-theme-landing-page)
+- | 29 | [Contact Form](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/29-contact-form) | [Code](./challenge-29-contact-form)
 
 ## 🛠️ Tech Stack
 
@@ -54,7 +56,7 @@ This repository tracks my progress, solutions, and learnings.
 
 ## 📈 Progress
 
-- ✅ Completed: 27 / 60
+- ✅ Completed: 29 / 60
 - 🔄 In progress: 1
 - 🎯 Goal: Finish all 60 challenges
 
