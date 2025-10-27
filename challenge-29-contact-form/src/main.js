@@ -28,7 +28,6 @@ const successMessage = document.querySelector(".success-message-box");
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const isValidEmail = (email) => emailPattern.test(email.trim());
 
-// Hide all errors
 const hideAllErrors = () => {
   [
     errorFirstName,
@@ -39,9 +38,54 @@ const hideAllErrors = () => {
     errorCheckbox,
   ].forEach((error) => error.classList.remove("show"));
 
-  // Only error-email-invalid error needs .hidden
+  // Only error-email-invalid needs .hidden
   errorEmailInvalid.classList.add("hidden");
 };
+
+// hide error on input
+inputFirstName.addEventListener("input", () => {
+  if (inputFirstName.value.trim() !== "") {
+    errorFirstName.classList.remove("show");
+  }
+});
+
+inputLastName.addEventListener("input", () => {
+  if (inputLastName.value.trim() !== "") {
+    errorLastName.classList.remove("show");
+  }
+});
+
+inputEmail.addEventListener("input", () => {
+  const email = inputEmail.value.trim();
+
+  if (email === "") {
+    errorEmailInvalid.classList.add("hidden");
+  } else if (isValidEmail(email)) {
+    errorEmailRequired.classList.remove("show");
+    errorEmailInvalid.classList.add("hidden");
+  } else {
+    errorEmailRequired.classList.remove("show");
+    errorEmailInvalid.classList.remove("hidden");
+  }
+});
+
+inputMessage.addEventListener("input", () => {
+  if (inputMessage.value.trim() !== "") {
+    errorMessage.classList.remove("show");
+  }
+});
+
+queryInputs.forEach((radio) => {
+  radio.addEventListener("change", () => {
+    errorQuery.classList.remove("show");
+  });
+});
+
+inputCheckbox.addEventListener("change", () => {
+  if (inputCheckbox.checked) {
+    errorCheckbox.classList.remove("show");
+  }
+});
 
 // Validate form
 const validateForm = () => {
@@ -90,8 +134,8 @@ const validateForm = () => {
   return isValid;
 };
 
-// Show success message
-const showSucces = () => {
+// Show Success Message
+const showSuccess = () => {
   // Scroll to top
   window.scrollTo({ top: 0, behavior: "smooth" });
 
@@ -109,5 +153,5 @@ form.addEventListener("submit", (e) => {
 
   const formIsValid = validateForm();
 
-  if (formIsValid) showSucces();
+  if (formIsValid) showSuccess();
 });

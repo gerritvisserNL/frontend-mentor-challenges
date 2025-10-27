@@ -25,13 +25,14 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100dvh;
-  margin: 2rem 0;
 }
 
 form {
   display: flex;
+  position: relative;
   flex-direction: column;
   width: 343px;
+  margin: 2rem 0;
   padding: 1.5rem;
   border-radius: 1rem;
   background-color: var(--color-white);
@@ -52,6 +53,16 @@ input:focus {
 .form-heading {
   margin-bottom: 1rem;
   color: var(--color-grey-900);
+}
+
+.firstname-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.lastname-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 label {
@@ -235,4 +246,65 @@ button:hover {
 .hidden {
   display: none;
   opacity: 0;
+}
+
+@media (min-width: 1440px) {
+  form {
+    position: relative;
+    width: 736px;
+    height: 773px;
+    margin: 128px 0;
+  }
+
+  .name-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .firstname-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .lastname-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .query-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .query-option--general,
+  .query-option--request {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .success-message-box {
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    width: 450px;
+    height: 107px;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    color: var(--color-white);
+    background-color: var(--color-green-600);
+    transform: translateX(-50%);
+  }
 }

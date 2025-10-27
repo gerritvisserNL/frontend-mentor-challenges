@@ -39,11 +39,16 @@ aria-label alleen wanneer de tekst niet zichtbaar is.
 
 ---
 
+<fieldset> groepeert gerelateerde formulier­elementen, en <legend> geeft die groep een beschrijvende titel.
+
+---
+
 <input aria-describedby="error-firstname"> vertelt screenreaders welke tekst als beschrijving bij het veld moet worden voorgelezen.
 
 <p id="error-firstname" class="required" role="alert">This field is required</p>
 
-Wanneer een inputveld twee foutmeldingen kan geven (vb: "error-email-required" en "error-email-invalid"), moet de aria-describedby dynamisch geupdated worden met javascript.
+Wanneer een inputveld twee foutmeldingen kan geven (vb: "error-email-required" en "error-email-invalid"), moet de aria-describedby beide errors bevatten:
+aria-describedby="error-email-required error-email-invalid"
 
 ---
 

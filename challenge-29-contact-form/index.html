@@ -24,33 +24,39 @@
       <form novalidate>
         <h1 class="form-heading">Contact Us</h1>
 
-        <!-- First Name -->
-        <label for="firstname">First Name <span>*</span></label>
-        <input
-          type="text"
-          id="firstname"
-          name="firstname"
-          required
-          aria-describedby="error-firstname"
-          autocomplete="given-name"
-        />
-        <p id="error-firstname" class="error" role="alert">
-          This field is required
-        </p>
+        <div class="name-wrapper">
+          <!-- First Name -->
+          <div class="firstname-wrapper">
+            <label for="firstname">First Name <span>*</span></label>
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              required
+              aria-describedby="error-firstname"
+              autocomplete="given-name"
+            />
+            <p id="error-firstname" class="error" role="alert">
+              This field is required
+            </p>
+          </div>
 
-        <!-- Last Name -->
-        <label for="lastname">Last Name <span>*</span></label>
-        <input
-          type="text"
-          id="lastname"
-          name="lastname"
-          required
-          aria-describedby="error-lastname"
-          autocomplete="family-name"
-        />
-        <p id="error-lastname" class="error" role="alert">
-          This field is required
-        </p>
+          <!-- Last Name -->
+          <div class="lastname-wrapper">
+            <label for="lastname">Last Name <span>*</span></label>
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              required
+              aria-describedby="error-lastname"
+              autocomplete="family-name"
+            />
+            <p id="error-lastname" class="error" role="alert">
+              This field is required
+            </p>
+          </div>
+        </div>
 
         <!-- Email -->
         <label for="email">Email Address <span>*</span></label>
@@ -59,7 +65,7 @@
           id="email"
           name="email"
           required
-          aria-describedby="error-email-required"
+          aria-describedby="error-email-required error-email-invalid"
         />
         <div class="error-email-wrapper">
           <p id="error-email-required" class="error" role="alert">
@@ -77,17 +83,19 @@
         <!-- Query Type -->
         <fieldset>
           <legend>Query Type <span>*</span></legend>
-          <label class="query-option--general">
-            <input
-              type="radio"
-              name="query"
-              value="general"
-              aria-describedby="error-query"
-            />General Enquiry
-          </label>
-          <label class="query-option--request">
-            <input type="radio" name="query" value="support" />Support Request
-          </label>
+          <div class="query-wrapper">
+            <label class="query-option--general">
+              <input
+                type="radio"
+                name="query"
+                value="general"
+                aria-describedby="error-query"
+              />General Enquiry
+            </label>
+            <label class="query-option--request">
+              <input type="radio" name="query" value="support" />Support Request
+            </label>
+          </div>
           <p id="error-query" class="error" role="alert">
             Please select a query type
           </p>
