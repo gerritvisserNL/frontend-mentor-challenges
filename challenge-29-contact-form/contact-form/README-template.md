@@ -29,43 +29,32 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
 
 ### What I learned
 
-Eerste keer stylelint gebruikt om CSS goed te rangschikken.
+CSS / Tools
+First time using stylelint to organize CSS properly.
+Used Vite again for a JS project after a long break.
 
-Sinds lange tijd weer vite gebruikt voor een project met JavaScript.
+Accessibility
+aria-label → only if the text is not visible.
 
----
+<fieldset> → groups related form elements.
+<legend> → provides a descriptive title for the group.
+<input aria-describedby="..."> → tells screen readers which description to read.
 
-aria-label alleen wanneer de tekst niet zichtbaar is.
-
----
-
-<fieldset> groepeert gerelateerde formulier­elementen, en <legend> geeft die groep een beschrijvende titel.
-
----
-
-<input aria-describedby="error-firstname"> vertelt screenreaders welke tekst als beschrijving bij het veld moet worden voorgelezen.
+Example:
 
 <p id="error-firstname" class="required" role="alert">This field is required</p>
 
-Wanneer een inputveld twee foutmeldingen kan geven (vb: "error-email-required" en "error-email-invalid"), moet de aria-describedby beide errors bevatten:
+Multiple errors? Include all IDs:
 aria-describedby="error-email-required error-email-invalid"
 
----
+Add role="alert" on error messages → announced immediately by screen readers.
 
-role="alert" toevoegen bij de error-message. Screenreaders lezen de inhoud van een element met role="alert" direct voor, zonder dat de gebruiker er eerst naartoe hoeft te navigeren.
+<p> should not be inside input elements → breaks semantics & may cause rendering issues.
 
----
+Use aria-live="polite" for success or informational messages → announced politely.
 
-<p> mag niet in een input-element. Semantiek breekt hierdoor en kan leiden tot browser rendering issues. Ook kunnen sommige screenreaders het verkeerd interpreteren.
-
----
-
-Gebruik aria-live="polite" voor success- of informatieve berichten zodat ze vriendelijk worden aangekondigd.
-
----
-
-Eerste keer :has gebruikt.
-:has() is een relational pseudo-class waarmee je kunt selecteren op basis van wat er binnenin of eronder een element zit.
+CSS Tips
+First time using :has() → select elements based on children or contained elements:
 
 .input-general:has(input[type="radio"]:checked),
 .input-request:has(input[type="radio"]:checked) {
@@ -73,9 +62,8 @@ border: 1px solid var(--color-green-600);
 background-color: var(--color-green-200);
 }
 
----
-
-Commentaar in de HTML gebruikt om het geheel overzichtelijker te maken.
+HTML Notes
+Use comments to keep the structure clear and organized.
 
 ## Author
 
