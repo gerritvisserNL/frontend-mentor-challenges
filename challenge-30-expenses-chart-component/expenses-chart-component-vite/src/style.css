@@ -30,6 +30,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   width: 343px;
 }
 
@@ -40,7 +41,7 @@ body {
   width: 100%;
   background-color: var(--clr-red-500);
   padding: 1.1rem;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
 }
 
 .expenses__balance {
@@ -57,4 +58,127 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   color: hsl(0, 100%, 100%);
+}
+
+.expenses__main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding: 1.1rem;
+  border-radius: 0.75rem;
+  background-color: hsl(0, 100%, 100%);
+}
+
+.expenses__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* CHART */
+.expenses__chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 200px;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--clr-red-100);
+}
+
+/* BAR CONTAINERS */
+.bar-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 11%;
+}
+
+/* BARS */
+.bar {
+  width: 100%;
+  border-radius: 4px;
+  background-color: var(--clr-red-500);
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.bar:hover {
+  opacity: 0.7;
+}
+
+.bar--max {
+  background-color: var(--clr-blue-300);
+}
+
+/* TOOLTIP */
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-0.3rem);
+  background-color: var(--clr-brown-950);
+  color: white;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  text-align: center;
+}
+
+.bar-container:hover .tooltip {
+  opacity: 1;
+}
+
+/* LABELS */
+.day-label {
+  font-size: 0.75rem;
+  color: var(--clr-brown-400);
+  margin-top: 0.5rem;
+}
+
+.expenses__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.expenses__summary-total {
+  display: flex;
+  flex-direction: column;
+}
+
+.expenses__summary-label {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--clr-brown-400);
+}
+
+.expenses__summary-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.expenses__summary-change {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 1rem;
+}
+
+.expenses__summary-percentage {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.expenses__summary-comparison {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--clr-brown-400);
 }
