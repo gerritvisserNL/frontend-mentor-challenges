@@ -7,50 +7,59 @@ const fetchData = async () => {
     const data = await res.json();
     return data;
   } catch (err) {
-    console.error("An error occured: ", err);
+    console.error("Error loading data:", err);
   }
 };
 
-const createBar = (item, maxAmount, maxHeight) => {
+const createBar = (item, maxAmount, maxBarHeight) => {
   const barContainer = document.createElement("div");
   barContainer.classList.add("bar-container");
 
+  // wrapper for bar + tooltip
   const barWrapper = document.createElement("div");
-  barWrapper.classList.add("bar-wrapper");
+  barWrapper.style.position = "relative"; // tooltip relative to his wrapper
+  barWrapper.style.width = "100%";
 
   const bar = document.createElement("div");
   bar.classList.add("bar");
+  // height in px with scale factor
+  bar.style.height = `${(item.amount / maxAmount) * maxBarHeight}px`;
+
+  if (item.amount === maxAmount) bar.classList.add("bar--max");
 
   const tooltip = document.createElement("div");
   tooltip.classList.add("tooltip");
   tooltip.textContent = `$${item.amount}`;
 
+  // tooltip in dezelfde wrapper als de bar, zodat absolute positioning werkt
+  barWrapper.append(bar, tooltip);
+
   const label = document.createElement("p");
   label.classList.add("day-label");
   label.textContent = item.day;
 
-  barWrapper.append(bar, tooltip);
+  // hover events voor tooltip
+  bar.addEventListener("mouseenter", () => (tooltip.style.opacity = "1"));
+  bar.addEventListener("mouseleave", () => (tooltip.style.opacity = "0"));
+
+  // barWrapper en label toevoegen aan container
   barContainer.append(barWrapper, label);
-
-  const barHeight = (item.amount / maxAmount) * maxHeight;
-  bar.style.height = `${barHeight}px`;
-
-  barWrapper.addEventListener("mouseenter", () => (tooltip.style.opacity = 1));
-  barWrapper.addEventListener("mouseleave", () => (tooltip.style.opacity = 0));
 
   return barContainer;
 };
 
-const data = await fetchData();
-const maxAmount = Math.max(...data.map((item) => item.amount));
-const maxHeight = maxAmount;
+const renderChart = async () => {
+  const chart = document.querySelector(".expenses__chart");
+  const data = await fetchData();
+  if (!data) return;
 
-const chart = document.querySelector(".expenses__chart");
+  const maxAmount = Math.max(...data.map((item) => item.amount));
+  const chartHeight = chart.clientHeight; // werkelijke hoogte
+  const maxBarHeight = chartHeight * 0.7; // hoogste bar = 70% van chart height
 
-const renderChart = () => {
   data.forEach((item) => {
-    const barEl = createBar(item, maxAmount, maxHeight);
-    chart.append(barEl);
+    const bar = createBar(item, maxAmount, maxBarHeight);
+    chart.append(bar);
   });
 };
 

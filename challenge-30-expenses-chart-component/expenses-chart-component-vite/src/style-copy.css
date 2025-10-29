@@ -80,45 +80,65 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 100%;
   height: 200px;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--clr-red-100);
 }
 
-/* bar */
+/* BAR CONTAINERS */
 .bar-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  height: 100%;
+  width: 11%;
 }
 
-.bar-wrapper {
-  position: relative;
-  width: 100%;
-}
-
+/* BARS */
 .bar {
-  display: flex;
-  background-color: var(--clr-red-500);
+  width: 100%;
   border-radius: 4px;
+  background-color: var(--clr-red-500);
+  transition: opacity 0.2s;
+  cursor: pointer;
 }
 
+.bar:hover {
+  opacity: 0.7;
+}
+
+.bar--max {
+  background-color: var(--clr-blue-300);
+}
+
+/* TOOLTIP */
 .tooltip {
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(-50%);
-  font-size: 0.5rem;
-  color: white;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-0.3rem);
   background-color: var(--clr-brown-950);
-  padding: 0.2rem;
+  color: white;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 0.3rem 0.5rem;
   border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  text-align: center;
+}
+
+.bar-container:hover .tooltip {
   opacity: 1;
 }
 
+/* LABELS */
 .day-label {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--clr-brown-400);
+  margin-top: 0.5rem;
 }
 
 .expenses__summary {
