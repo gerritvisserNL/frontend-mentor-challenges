@@ -11,7 +11,11 @@ const fetchData = async () => {
   }
 };
 
-const createBar = (item, maxAmount, maxHeight) => {
+// calling fetchData
+const data = await fetchData();
+
+// Function to create the bars of chart
+const createBar = (item, maxAmount, maxBarHeight) => {
   const barContainer = document.createElement("div");
   barContainer.classList.add("bar-container");
 
@@ -20,6 +24,11 @@ const createBar = (item, maxAmount, maxHeight) => {
 
   const bar = document.createElement("div");
   bar.classList.add("bar");
+
+  const barHeight = (item.amount / maxAmount) * maxBarHeight;
+  bar.style.height = `${barHeight}px`;
+
+  if (item.amount === maxAmount) bar.classList.add("bar--max");
 
   const tooltip = document.createElement("div");
   tooltip.classList.add("tooltip");
@@ -32,24 +41,22 @@ const createBar = (item, maxAmount, maxHeight) => {
   barWrapper.append(bar, tooltip);
   barContainer.append(barWrapper, label);
 
-  const barHeight = (item.amount / maxAmount) * maxHeight;
-  bar.style.height = `${barHeight}px`;
-
   barWrapper.addEventListener("mouseenter", () => (tooltip.style.opacity = 1));
   barWrapper.addEventListener("mouseleave", () => (tooltip.style.opacity = 0));
 
   return barContainer;
 };
 
-const data = await fetchData();
-const maxAmount = Math.max(...data.map((item) => item.amount));
-const maxHeight = maxAmount;
-
-const chart = document.querySelector(".expenses__chart");
-
+// Function to render Chart
 const renderChart = () => {
+  const chart = document.querySelector(".expenses__chart");
+
+  const maxAmount = Math.max(...data.map((item) => item.amount));
+  const chartHeight = chart.clientHeight;
+  const maxBarHeight = chartHeight * 0.7;
+
   data.forEach((item) => {
-    const barEl = createBar(item, maxAmount, maxHeight);
+    const barEl = createBar(item, maxAmount, maxBarHeight);
     chart.append(barEl);
   });
 };
