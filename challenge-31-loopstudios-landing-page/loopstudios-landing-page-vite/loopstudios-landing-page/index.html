@@ -14,24 +14,37 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
+      <header>
         <svg class="header__logo" width="192" height="32" role="img">
           <title>Logo of Loopstudios</title>
           <use href="images/sprite.svg#logo-loopstudios"></use>
         </svg>
-        <svg class="header__menu" width="24" height="16" role="img">
+        <svg class="header__toggle-icon" width="24" height="16" role="img">
           <title>Menu</title>
-          <use href="images/sprite.svg#hamburger-menu"></use>
+          <use href="images/sprite.svg#icon-hamburger"></use>
         </svg>
+        <nav class="header__nav hidden">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">About</li>
+            <li class="header__nav-item">Careers</li>
+            <li class="header__nav-item">Events</li>
+            <li class="header__nav-item">Products</li>
+            <li class="header__nav-item">Support</li>
+          </ul>
+        </nav>
       </header>
 
       <section class="hero">
-        <h1 class="hero__heading">About Careers Events Products Support</h1>
+        <h1 class="hero__heading">Immersive Experiences That Deliver</h1>
       </section>
 
-      <main class="main">
+      <main>
         <article class="leader">
-          <img src="./public/images/mobile/image-interactive.jpg" alt="" />
+          <img
+            class="leader__image"
+            src="./public/images/mobile/image-interactive.jpg"
+            alt=""
+          />
           <h2 class="leader__heading">The leader in interactive VR</h2>
           <p class="leader__text">
             Founded in 2011, Loopstudios has been producing world-class virtual
@@ -71,9 +84,73 @@
           <button class="creations__button">See all</button>
         </section>
       </main>
-      <footer class="footer">
-        About Careers Events Products Support © 2021 Loopstudios. All rights
-        reserved.
+      <footer>
+        <svg class="footer__logo" width="192" height="32" role="img">
+          <title>Logo of Loopstudios</title>
+          <use href="images/sprite.svg#logo-loopstudios"></use>
+        </svg>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">About</li>
+            <li class="footer__nav-item">Careers</li>
+            <li class="footer__nav-item">Events</li>
+            <li class="footer__nav-item">Products</li>
+            <li class="footer__nav-item">Support</li>
+          </ul>
+        </nav>
+        <ul class="footer__socials">
+          <li>
+            <svg
+              class="footer__socials-icon footer__socials-icon--facebook"
+              width="24"
+              height="24"
+              role="img"
+              aria-hidden="true"
+            >
+              <title>Icon Facebook</title>
+              <use href="images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </li>
+          <li>
+            <svg
+              class="footer__socials-icon footer__socials-icon--twitter"
+              width="24"
+              height="20"
+              role="img"
+              aria-hidden="true"
+            >
+              <title>Icon Twitter</title>
+              <use href="images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </li>
+          <li>
+            <svg
+              class="footer__socials-icon footer__socials-icon--pinterest"
+              width="24"
+              height="24"
+              role="img"
+              aria-hidden="true"
+            >
+              <title>Icon Pinterest</title>
+              <use href="images/sprite.svg#icon-pinterest"></use>
+            </svg>
+          </li>
+          <li>
+            <svg
+              class="footer__socials-icon footer__socials-icon--instagram"
+              width="24"
+              height="24"
+              role="img"
+              aria-hidden="true"
+            >
+              <title>Icon Instagram</title>
+              <use href="images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </li>
+        </ul>
+        <p class="footer__copyright">
+          © 2021 Loopstudios. All rights reserved.
+        </p>
       </footer>
     </div>
     <script type="module" src="/src/main.js"></script>
