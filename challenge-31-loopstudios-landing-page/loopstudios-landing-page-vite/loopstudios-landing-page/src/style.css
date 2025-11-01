@@ -55,6 +55,7 @@ header {
 }
 
 .header__toggle-icon {
+  display: block;
   color: var(--white);
 }
 
@@ -355,4 +356,87 @@ footer {
 
 .footer__copyright {
   color: var(--grey-200);
+}
+
+@media (min-width: 1440px) {
+  .container {
+    background-color: var(--white);
+  }
+
+  .wrapper {
+    width: 1440px;
+  }
+
+  header {
+    padding: 5rem 11rem;
+  }
+
+  .header__toggle-icon {
+    display: none;
+  }
+
+  .header__nav-desktop {
+    display: block;
+  }
+
+  .header__nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .header__nav-link {
+    font-family: "Alata", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: none;
+    color: var(--white);
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 650px;
+    padding: 0 11rem;
+
+    background-image: linear-gradient(
+        to right,
+        rgb(0 0 0 / 60%),
+        rgb(0 0 0 / 0%)
+      ),
+      url("/images/desktop/image-hero.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  .hero__heading {
+    width: 43rem;
+    padding: 2rem 2rem 1.25rem;
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-top: 5rem;
+  }
+
+  main {
+    padding: 11rem;
+  }
+
+  .leader {
+    position: relative;
+  }
+
+  .leader__image {
+    width: 20rem;
+    height: auto;
+  }
+
+  .leader__content {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40rem;
+    background-color: var(--white);
+  }
 }
