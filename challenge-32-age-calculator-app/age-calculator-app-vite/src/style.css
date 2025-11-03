@@ -1,0 +1,150 @@
+:root {
+  /* Primary */
+  --color-purple-500: hsl(259deg 100% 65%);
+  --color-red-400: hsl(0deg 100% 67%);
+
+  /* Neutral */
+  --color-white: hsl(0deg 100% 100%);
+  --color-grey-100: hsl(0deg 0% 94%);
+  --color-grey-200: hsl(0deg 0% 86%);
+  --color-grey-500: hsl(0deg 1% 44%);
+  --color-black: hsl(0deg 0% 0%);
+}
+
+html {
+  font-size: 32px;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background-color: var(--color-grey-100);
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 343px;
+  padding: 48px 24px;
+  border-radius: 0.5rem;
+  background-color: var(--color-white);
+  border-bottom-right-radius: 3rem;
+}
+
+/* form reset */
+form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+}
+
+#age-form {
+  position: relative;
+  width: 100%;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-grey-200);
+  margin-bottom: 1.8rem;
+}
+
+/* fieldset reset */
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+label {
+  margin-bottom: 0.1rem;
+  font-size: 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-grey-500);
+}
+
+input {
+  width: 86px;
+  height: 54px;
+  margin: 0;
+  padding: 0 16px;
+  border: 1px solid var(--color-grey-200);
+  border-radius: 10px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+input::placeholder {
+  color: var(--color-grey-200);
+}
+
+.submit-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 64px;
+  height: 64px;
+  padding: 19px;
+  border-radius: 50%;
+  color: var(--color-white);
+  background-color: var(--color-purple-500);
+  cursor: pointer;
+  border-style: none;
+}
+
+.submit-btn:hover {
+  background-color: var(--color-black);
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.result {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.value,
+.label {
+  font-family: Poppins, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 800;
+  line-height: 1.8rem;
+  color: var(--color-purple-500);
+  font-style: italic;
+}
+
+.label {
+  color: var(--color-black);
+}

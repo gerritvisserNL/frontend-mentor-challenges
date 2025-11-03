@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image" href="/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Age Calculator App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <form id="age-form" novalidate>
+          <fieldset class="input-group">
+            <div class="input-field">
+              <label for="day">day</label>
+              <input
+                type="text"
+                inputmode="numeric"
+                pattern="\d{2}"
+                maxlength="2"
+                id="day"
+                name="day"
+                placeholder="DD"
+                required
+              />
+            </div>
+
+            <div class="input-field">
+              <label for="month">month</label>
+              <input
+                type="text"
+                inputmode="numeric"
+                pattern="\d{2}"
+                maxlength="2"
+                id="month"
+                name="month"
+                placeholder="MM"
+                required
+              />
+            </div>
+
+            <div class="input-field">
+              <label for="year">year</label>
+              <input
+                type="text"
+                inputmode="numeric"
+                pattern="\d{4}"
+                maxlength="4"
+                id="year"
+                name="year"
+                placeholder="YYYY"
+                required
+              />
+            </div>
+          </fieldset>
+
+          <button type="submit" class="submit-btn" aria-label="Calculate age">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 44">
+              <title>Submit button</title>
+              <g fill="none" stroke="currentColor" stroke-width="3">
+                <path
+                  d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                />
+              </g>
+            </svg>
+          </button>
+        </form>
+
+        <section class="results">
+          <div class="result">
+            <span class="value">38</span>
+            <p class="label">years</p>
+          </div>
+          <div class="result">
+            <span class="value">3</span>
+            <p class="label">months</p>
+          </div>
+          <div class="result">
+            <span class="value">26</span>
+            <p class="label">days</p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
