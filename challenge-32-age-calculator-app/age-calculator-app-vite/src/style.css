@@ -88,6 +88,10 @@ label {
   color: var(--color-grey-500);
 }
 
+label.error {
+  color: var(--color-red-400);
+}
+
 input {
   width: 86px;
   height: 54px;
@@ -98,10 +102,20 @@ input {
   font-size: 0.6rem;
   font-weight: 700;
   color: var(--color-black);
+  outline: none;
+  caret-color: var(--color-purple-500);
 }
 
 input::placeholder {
   color: var(--color-grey-200);
+}
+
+input:focus {
+  border: 1px solid var(--color-purple-500);
+}
+
+input.error {
+  border: 1px solid var(--color-red-400);
 }
 
 /* error message */
