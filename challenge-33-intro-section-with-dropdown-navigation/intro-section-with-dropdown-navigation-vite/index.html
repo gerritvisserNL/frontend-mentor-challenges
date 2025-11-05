@@ -1,13 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>intro-section-with-dropdown-navigation</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Intro Section With Dropdown Navigation</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="container">
+      <div class="inner-container">
+        <header>
+          <a href="#">
+            <svg class="header__logo" width="192" height="32" role="img">
+              <title>Logo of Snap</title>
+              <use href="images/sprite.svg#logo-snap"></use>
+            </svg>
+          </a>
+          <svg class="header__toggle-icon" width="24" height="16" role="img">
+            <title>Menu</title>
+            <use href="images/sprite.svg#icon-hamburger"></use>
+          </svg>
+        </header>
+      </div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
