@@ -1,184 +1,205 @@
-<div class="page">
-  <div class="page__inner">
-    <header class="header">
-      <svg class="header__logo" width="192" height="32" role="img">
-        <title>Logo of Snap</title>
-        <use href="images/sprite.svg#logo"></use>
-      </svg>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <button class="header__toggle" aria-label="Open menu">
-        <svg class="header__toggle-icon" width="24" height="16" role="img">
-          <use href="images/sprite.svg#icon-menu"></use>
-        </svg>
-      </button>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link
+  href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+  rel="stylesheet"
+/>
 
-      <nav class="nav">
-        <button class="nav__close" aria-label="Close menu">
-          <svg class="nav__close-icon" width="26" height="26" role="img">
-            <use href="images/sprite.svg#icon-close-menu"></use>
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <body>
+    <div class="page">
+      <div class="page__inner">
+        <header class="header">
+          <svg class="header__logo" width="84" height="27" role="img">
+            <title>Logo of Snap</title>
+            <use href="images/sprite.svg#logo"></use>
           </svg>
-        </button>
 
-        <ul class="nav__list">
-          <li class="nav__item nav__item--has-dropdown">
-            <button class="nav__link">
-              Features
-              <svg
-                class="nav__arrow nav__arrow--down"
-                width="10"
-                height="6"
-                role="img"
-              >
-                <use href="images/sprite.svg#icon-arrow-down"></use>
-              </svg>
-              <svg
-                class="nav__arrow nav__arrow--up"
-                width="10"
-                height="6"
-                role="img"
-              >
-                <use href="images/sprite.svg#icon-arrow-up"></use>
+          <button class="header__toggle" aria-label="Open menu">
+            <svg class="header__toggle-icon" width="24" height="16" role="img">
+              <use href="images/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <div class="overlay"></div>
+
+          <nav class="nav">
+            <button class="nav__close" aria-label="Close menu">
+              <svg class="nav__close-icon" width="26" height="26" role="img">
+                <use href="images/sprite.svg#icon-close-menu"></use>
               </svg>
             </button>
 
-            <ul class="nav__dropdown">
-              <li class="nav__dropdown-item">
-                <svg
-                  class="nav__dropdown-icon"
-                  width="14"
-                  height="16"
-                  role="img"
-                >
-                  <use href="images/sprite.svg#icon-todo"></use>
-                </svg>
-                Todo List
+            <ul class="nav__list">
+              <li class="nav__item nav__item--has-dropdown">
+                <button class="nav__link">
+                  Features
+                  <svg
+                    class="nav__arrow nav__arrow--down"
+                    width="10"
+                    height="6"
+                    role="img"
+                  >
+                    <use href="images/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                  <svg
+                    class="nav__arrow nav__arrow--up"
+                    width="10"
+                    height="6"
+                    role="img"
+                  >
+                    <use href="images/sprite.svg#icon-arrow-up"></use>
+                  </svg>
+                </button>
+
+                <ul class="nav__dropdown">
+                  <li class="nav__dropdown-item">
+                    <svg
+                      class="nav__dropdown-icon"
+                      width="14"
+                      height="16"
+                      role="img"
+                    >
+                      <use href="images/sprite.svg#icon-todo"></use>
+                    </svg>
+                    Todo List
+                  </li>
+                  <li class="nav__dropdown-item">
+                    <svg
+                      class="nav__dropdown-icon"
+                      width="16"
+                      height="16"
+                      role="img"
+                    >
+                      <use href="images/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    Calendar
+                  </li>
+                  <li class="nav__dropdown-item">
+                    <svg
+                      class="nav__dropdown-icon"
+                      width="13"
+                      height="17"
+                      role="img"
+                    >
+                      <use href="images/sprite.svg#icon-reminders"></use>
+                    </svg>
+                    Reminders
+                  </li>
+                  <li class="nav__dropdown-item">
+                    <svg
+                      class="nav__dropdown-icon"
+                      width="16"
+                      height="16"
+                      role="img"
+                    >
+                      <use href="images/sprite.svg#icon-planning"></use>
+                    </svg>
+                    Planning
+                  </li>
+                </ul>
               </li>
-              <li class="nav__dropdown-item">
-                <svg
-                  class="nav__dropdown-icon"
-                  width="16"
-                  height="16"
-                  role="img"
-                >
-                  <use href="images/sprite.svg#icon-calendar"></use>
-                </svg>
-                Calendar
+
+              <li class="nav__item nav__item--has-dropdown">
+                <button class="nav__link">
+                  Company
+                  <svg
+                    class="nav__arrow nav__arrow--down"
+                    width="10"
+                    height="6"
+                    role="img"
+                  >
+                    <use href="images/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                  <svg
+                    class="nav__arrow nav__arrow--up"
+                    width="10"
+                    height="6"
+                    role="img"
+                  >
+                    <use href="images/sprite.svg#icon-arrow-up"></use>
+                  </svg>
+                </button>
+
+                <ul class="nav__dropdown">
+                  <li class="nav__dropdown-item">History</li>
+                  <li class="nav__dropdown-item">Our Team</li>
+                  <li class="nav__dropdown-item">Blog</li>
+                </ul>
               </li>
-              <li class="nav__dropdown-item">
-                <svg
-                  class="nav__dropdown-icon"
-                  width="13"
-                  height="17"
-                  role="img"
-                >
-                  <use href="images/sprite.svg#icon-reminders"></use>
-                </svg>
-                Reminders
+
+              <li class="nav__item">
+                <a class="nav__link" href="#">Careers</a>
               </li>
-              <li class="nav__dropdown-item">
-                <svg
-                  class="nav__dropdown-icon"
-                  width="16"
-                  height="16"
-                  role="img"
-                >
-                  <use href="images/sprite.svg#icon-planning"></use>
-                </svg>
-                Planning
-              </li>
+              <li class="nav__item"><a class="nav__link" href="#">About</a></li>
             </ul>
-          </li>
-
-          <li class="nav__item nav__item--has-dropdown">
-            <button class="nav__link">
-              Company
-              <svg
-                class="nav__arrow nav__arrow--down"
-                width="10"
-                height="6"
-                role="img"
+            <div class="nav__auth">
+              <a href="/login" class="nav__auth-button nav__auth-button--login"
+                >Login</a
               >
-                <use href="images/sprite.svg#icon-arrow-down"></use>
-              </svg>
-              <svg
-                class="nav__arrow nav__arrow--up"
-                width="10"
-                height="6"
-                role="img"
+              <a
+                href="/register"
+                class="nav__auth-button nav__auth-button--register"
+                >Register</a
               >
-                <use href="images/sprite.svg#icon-arrow-up"></use>
-              </svg>
-            </button>
+            </div>
+          </nav>
+        </header>
+        <div class="hero"></div>
+        <main class="main">
+           <h1 class="main__title">Make remote work</h1>
+           <p class="main__text">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="main__button">Learn more</button>
+          </section>
+        </main>
 
-            <ul class="nav__dropdown">
-              <li class="nav__dropdown-item">History</li>
-              <li class="nav__dropdown-item">Our Team</li>
-              <li class="nav__dropdown-item">Blog</li>
-            </ul>
-          </li>
-
-          <li class="nav__item"><a class="nav__link" href="#">Careers</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-        </ul>
-        <div class="nav__auth">
-          <a href="/login" class="nav__auth-button nav__auth-button--login"
-            >Login</a
-          >
-          <a
-            href="/register"
-            class="nav__auth-button nav__auth-button--register"
-            >Register</a
-          >
-        </div>
-      </nav>
-    </header>
-
-    <main class="main">
-      <section class="hero">
-        <h1 class="hero__title">Make remote work</h1>
-        <p class="hero__text">
-          Get your team in sync, no matter your location. Streamline processes,
-          create team rituals, and watch productivity soar.
-        </p>
-        <button class="hero__button">Learn more</button>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="clients">
-        <svg
-          class="clients__logo clients__logo--databiz"
-          width="114"
-          height="20"
-          role="img"
-        >
-          <use href="images/sprite.svg#client-databiz"></use>
-        </svg>
-        <svg
-          class="clients__logo clients__logo--audiophile"
-          width="73"
-          height="36"
-          role="img"
-        >
-          <use href="images/sprite.svg#client-audiophile"></use>
-        </svg>
-        <svg
-          class="clients__logo clients__logo--meet"
-          width="90"
-          height="20"
-          role="img"
-        >
-          <use href="images/sprite.svg#client-meet"></use>
-        </svg>
-        <svg
-          class="clients__logo clients__logo--maker"
-          width="83"
-          height="24"
-          role="img"
-        >
-          <use href="images/sprite.svg#client-maker"></use>
-        </svg>
+        <footer class="footer">
+          <div class="clients">
+            <svg
+              class="clients__logo clients__logo--databiz"
+              width="114"
+              height="20"
+              role="img"
+            >
+              <use href="images/sprite.svg#client-databiz"></use>
+            </svg>
+            <svg
+              class="clients__logo clients__logo--audiophile"
+              width="73"
+              height="36"
+              role="img"
+            >
+              <use href="images/sprite.svg#client-audiophile"></use>
+            </svg>
+            <svg
+              class="clients__logo clients__logo--meet"
+              width="90"
+              height="20"
+              role="img"
+            >
+              <use href="images/sprite.svg#client-meet"></use>
+            </svg>
+            <svg
+              class="clients__logo clients__logo--maker"
+              width="83"
+              height="24"
+              role="img"
+            >
+              <use href="images/sprite.svg#client-maker"></use>
+            </svg>
+          </div>
+        </footer>
       </div>
-    </footer>
-  </div>
-</div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
