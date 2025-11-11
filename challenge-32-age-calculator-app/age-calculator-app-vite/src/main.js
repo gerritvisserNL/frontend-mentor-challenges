@@ -5,7 +5,6 @@ const form = document.querySelector("#age-form");
 const inputDay = document.querySelector("#day");
 const inputMonth = document.querySelector("#month");
 const inputYear = document.querySelector("#year");
-const labels = document.querySelectorAll("label");
 
 const resultDays = document.querySelector(".result__value--days");
 const resultMonths = document.querySelector(".result__value--months");
@@ -28,7 +27,7 @@ const calculateAge = (day, month, year) => {
   // Calculate years
   let years = now.getFullYear() - birthDate.getFullYear();
 
-  // Check of birthday of this year has passed
+  // Check if birthday of this year has passed
   const hasBirthdayPassed =
     now.getMonth() > birthDate.getMonth() ||
     (now.getMonth() === birthDate.getMonth() &&
