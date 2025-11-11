@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <link
-  href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
-  rel="stylesheet"
-/>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
   <body>
     <div class="page">
       <div class="page__inner">
@@ -60,48 +66,56 @@
 
                 <ul class="nav__dropdown hidden">
                   <li class="nav__dropdown-item">
-                    <svg
-                      class="nav__dropdown-icon icon-todo"
-                      width="14"
-                      height="16"
-                      role="img"
-                    >
-                      <use href="images/sprite.svg#icon-todo"></use>
-                    </svg>
-                    Todo List
+                    <a href="#" class="nav__dropdown-link"
+                      ><svg
+                        class="nav__dropdown-icon icon-todo"
+                        width="14"
+                        height="16"
+                        role="img"
+                      >
+                        <use href="images/sprite.svg#icon-todo"></use>
+                      </svg>
+                      Todo List
+                    </a>
                   </li>
                   <li class="nav__dropdown-item">
-                    <svg
-                      class="nav__dropdown-icon icon-calendar"
-                      width="16"
-                      height="16"
-                      role="img"
-                    >
-                      <use href="images/sprite.svg#icon-calendar"></use>
-                    </svg>
-                    Calendar
+                    <a href="#" class="nav__dropdown-link">
+                      <svg
+                        class="nav__dropdown-icon icon-calendar"
+                        width="16"
+                        height="16"
+                        role="img"
+                      >
+                        <use href="images/sprite.svg#icon-calendar"></use>
+                      </svg>
+                      Calendar
+                    </a>
                   </li>
                   <li class="nav__dropdown-item">
-                    <svg
-                      class="nav__dropdown-icon icon-reminders"
-                      width="13"
-                      height="17"
-                      role="img"
-                    >
-                      <use href="images/sprite.svg#icon-reminders"></use>
-                    </svg>
-                    Reminders
+                    <a href="#" class="nav__dropdown-link">
+                      <svg
+                        class="nav__dropdown-icon icon-reminders"
+                        width="13"
+                        height="17"
+                        role="img"
+                      >
+                        <use href="images/sprite.svg#icon-reminders"></use>
+                      </svg>
+                      Reminders
+                    </a>
                   </li>
                   <li class="nav__dropdown-item">
-                    <svg
-                      class="nav__dropdown-icon icon-planning"
-                      width="16"
-                      height="16"
-                      role="img"
-                    >
-                      <use href="images/sprite.svg#icon-planning"></use>
-                    </svg>
-                    Planning
+                    <a href="#" class="nav__dropdown-link">
+                      <svg
+                        class="nav__dropdown-icon icon-planning"
+                        width="16"
+                        height="16"
+                        role="img"
+                      >
+                        <use href="images/sprite.svg#icon-planning"></use>
+                      </svg>
+                      Planning
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -128,9 +142,15 @@
                 </button>
 
                 <ul class="nav__dropdown hidden">
-                  <li class="nav__dropdown-item">History</li>
-                  <li class="nav__dropdown-item">Our Team</li>
-                  <li class="nav__dropdown-item">Blog</li>
+                  <li class="nav__dropdown-item">
+                    <a href="#" class="nav__dropdown-link">History</a>
+                  </li>
+                  <li class="nav__dropdown-item">
+                    <a href="#" class="nav__dropdown-link">Our Team</a>
+                  </li>
+                  <li class="nav__dropdown-item">
+                    <a href="#" class="nav__dropdown-link">Blog</a>
+                  </li>
                 </ul>
               </li>
 
@@ -138,7 +158,8 @@
                 <a class="nav__link" href="#">Careers</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">About</a></li>
+                <a class="nav__link" href="#">About</a>
+              </li>
             </ul>
             <div class="nav__auth">
               <a href="/login" class="nav__auth-button nav__auth-button--login"
@@ -152,53 +173,54 @@
             </div>
           </nav>
         </header>
-        <div class="hero"></div>
-        <main class="main">
-           <h1 class="main__title">Make remote work</h1>
-           <p class="main__text">
+        <div class="content">
+          <div class="hero"></div>
+          <main class="main">
+            <h1 class="main__title">Make remote work</h1>
+            <p class="main__text">
               Get your team in sync, no matter your location. Streamline
               processes, create team rituals, and watch productivity soar.
             </p>
             <button class="main__button">Learn more</button>
-          </section>
-        </main>
+          </main>
 
-        <footer class="footer">
-          <div class="clients">
-            <svg
-              class="clients__logo clients__logo--databiz"
-              width="114"
-              height="20"
-              role="img"
-            >
-              <use href="images/sprite.svg#client-databiz"></use>
-            </svg>
-            <svg
-              class="clients__logo clients__logo--audiophile"
-              width="73"
-              height="36"
-              role="img"
-            >
-              <use href="images/sprite.svg#client-audiophile"></use>
-            </svg>
-            <svg
-              class="clients__logo clients__logo--meet"
-              width="90"
-              height="20"
-              role="img"
-            >
-              <use href="images/sprite.svg#client-meet"></use>
-            </svg>
-            <svg
-              class="clients__logo clients__logo--maker"
-              width="83"
-              height="24"
-              role="img"
-            >
-              <use href="images/sprite.svg#client-maker"></use>
-            </svg>
-          </div>
-        </footer>
+          <footer class="footer">
+            <div class="clients">
+              <svg
+                class="clients__logo clients__logo--databiz"
+                width="114"
+                height="20"
+                role="img"
+              >
+                <use href="images/sprite.svg#client-databiz"></use>
+              </svg>
+              <svg
+                class="clients__logo clients__logo--audiophile"
+                width="73"
+                height="36"
+                role="img"
+              >
+                <use href="images/sprite.svg#client-audiophile"></use>
+              </svg>
+              <svg
+                class="clients__logo clients__logo--meet"
+                width="90"
+                height="20"
+                role="img"
+              >
+                <use href="images/sprite.svg#client-meet"></use>
+              </svg>
+              <svg
+                class="clients__logo clients__logo--maker"
+                width="83"
+                height="24"
+                role="img"
+              >
+                <use href="images/sprite.svg#client-maker"></use>
+              </svg>
+            </div>
+          </footer>
+        </div>
       </div>
     </div>
     <script type="module" src="./src/main.js"></script>
