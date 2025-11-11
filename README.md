@@ -45,6 +45,10 @@ This repository tracks my progress, solutions, and learnings.
 - | 27 | [Clipboard Landing Page](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/27-clipboard-landing-page) | [Code](./challenge-27-clipboard-landing-page)
 - | 28 | [Fylo Dark Theme Landing Page](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/28-fylo-dark-theme-landing-page) | [Code](./challenge-28-fylo-dark-theme-landing-page)
 - | 29 | [Contact Form](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/29-contact-form) | [Code](./challenge-29-contact-form)
+- | 30 | [Expenses Chart Component](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/30-expenses-chart-component) | [Code](./challenge-30-expenses-chart-component)
+- | 31 | [Loopstudios Landing Page](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/31-loopstudios-landing-page) | [Code](./challenge-31-loopstudios-landing-page)
+- | 32 | [Age Calculator App](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/32-age-calculator-app) | [Code](./challenge-32-age-calculator-app)
+- | 33 | [Intro Section With Dropdown Navigation](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5) | [Demo](https://www.gerritvisser.nl/frontendmentor/challenges/33-intro-section) | [Code](./challenge-33-intro-section-with-dropdown-navigation)
 
 ## 🛠️ Tech Stack
 
@@ -56,7 +60,7 @@ This repository tracks my progress, solutions, and learnings.
 
 ## 📈 Progress
 
-- ✅ Completed: 29 / 60
+- ✅ Completed: 33 / 60
 - 🔄 In progress: 1
 - 🎯 Goal: Finish all 60 challenges
 
