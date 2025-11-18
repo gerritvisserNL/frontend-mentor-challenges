@@ -204,7 +204,7 @@ body.nav-open {
    Hero Section
 =============================== */
 .hero {
-  background-image: url("images/image-hero-mobile.png");
+  background-image: url("/images/image-hero-mobile.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -387,7 +387,7 @@ body.nav-open {
 
   .hero {
     grid-area: hero;
-    background-image: url("images/image-hero-desktop.png");
+    background-image: url("/images/image-hero-desktop.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/frontendmentor/challenges/31-expenses-chart-component/",
+  base: "/frontendmentor/challenges/30-expenses-chart-component/",
 });
