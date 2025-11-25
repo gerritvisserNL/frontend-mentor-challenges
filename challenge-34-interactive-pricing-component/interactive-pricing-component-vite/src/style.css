@@ -1,18 +1,20 @@
 :root {
   /* Primary Colors */
-  --soft-cyan: hsl(174, 77%, 80%);
-  --strong-cyan: hsl(174, 86%, 45%);
-  --light-grayish-red: hsl(14, 92%, 95%);
-  --light-red: hsl(15, 100%, 70%);
-  --pale-blue: hsl(226, 100%, 87%);
+  --soft-cyan: hsl(174, 77%, 80%); /* Full Slider Bar */
+  --soft-cyan-shadow: hsla(174, 77%, 80%, 0.2); /* Slide Shadow */
+  --strong-cyan: hsl(174, 86%, 45%); /* Slider bg */
+  --light-grayish-red: hsl(14, 92%, 95%); /* Discount bg */
+  --light-red: hsl(15, 100%, 70%); /* Discount Text */
+  --pale-blue: hsl(226, 100%, 87%); /* CTA Text */
 
   /* Neutral Colors */
-  --white: hsl(0, 0%, 100%);
-  --very-pale-blue: hsl(230, 100%, 99%);
-  --light-grayish-blue: hsl(224, 65%, 95%);
-  --toggle-bg: hsl(223, 50%, 87%);
-  --grayish-blue: hsl(225, 20%, 60%);
-  --dark-desaturated-blue: hsl(227, 35%, 25%);
+  --white: hsl(0, 0%, 100%); /* Pricing component Background */
+  --very-pale-blue: hsl(230, 100%, 99%); /* Main background */
+  --light-grayish-blue: hsl(224, 65%, 95%); /* Empty Slider Bar */
+  --toggle-bg: hsl(223, 50%, 87%); /* Toggle Background */
+  --grayish-blue: hsl(225, 20%, 60%); /* Text */
+  --dark-desaturated-blue: hsl(227, 35%, 25%); /* Text & CTA */
+  --shadow: hsl(227, 35%, 25%, 0.2); /* Card Shadow */
 }
 
 html {
@@ -23,4 +25,165 @@ body {
   font-family: "Manrope", sans-serif;
   background-color: var(--very-pale-blue);
   color: var(--dark-desaturated-blue);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 100dvh;
+  background-image: url("./images/bg-pattern.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 1250px;
+  background-color: var(--very-pale-blue);
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.header {
+  margin: 4rem 0 2rem;
+  padding-top: 2rem;
+  width: 100%;
+  background-image: url("./images/pattern-circles.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 10rem;
+}
+
+.header__heading {
+  font-size: 1.4rem;
+}
+
+.header__text {
+  padding: 1rem 4.5rem;
+  color: var(--grayish-blue);
+  font-size: 0.95rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0;
+  width: 100%;
+  border-radius: 1rem;
+  background-color: var(--white);
+  box-shadow: 0 16px 24px var(--shadow);
+}
+
+.card__pageviews {
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--grayish-blue);
+}
+
+.card__pageviews span {
+  margin-right: 0.2rem;
+}
+
+.card__slider {
+  position: relative;
+  margin: 2.5rem 0;
+  height: 8px;
+  width: calc(100% - 3rem);
+  border-radius: 4px;
+  background-color: var(--light-grayish-blue);
+}
+
+.card__sliderBtn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--strong-cyan);
+  background-image: url("./images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 12px 24px var(--soft-cyan-shadow);
+  transform: translate(-50%, -50%);
+}
+
+.card__pricing {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--grayish-blue);
+}
+
+.card__pricing span {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--dark-desaturated-blue);
+}
+
+.card__billing {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--grayish-blue);
+  margin-left: 2rem;
+}
+
+.card__toggle {
+  position: relative;
+  margin: 1.5rem 0.75rem;
+  height: 22px;
+  width: 42px;
+  border-radius: 11px;
+  background-color: var(--toggle-bg);
+}
+
+.card__toggle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--white);
+  transform: translate(30%, -50%);
+}
+
+.card__discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.3rem;
+  width: 41px;
+  height: 18px;
+  line-height: 2px;
+  border-radius: 9px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  background-color: var(--light-grayish-red);
+  color: var(--light-red);
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  color: var(--light-grayish-blue);
+  margin: 1rem 0;
+}
+
+.card__list {
+  list-style: none;
 }

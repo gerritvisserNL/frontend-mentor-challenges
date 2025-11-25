@@ -2,9 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Frontend Mentor challenge: Build an interactive pricing component with traffic-based plans, toggleable monthly/yearly billing, and a 30-day trial."
+    />
+    <meta name="robots" content="index, follow" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,15 +18,40 @@
     />
 
     <title>Frontend Mentor | Interactive Pricing Component</title>
-      <link rel="canonical" href="https://www.gerritvisser.nl/frontendmentor/challenges/34-interactive-pricing-component">
-    <meta name="robots" content="index, follow">
-</head>
+    <link
+      rel="canonical"
+      href="https://www.gerritvisser.nl/frontendmentor/challenges/34-interactive-pricing-component"
+    />
+  </head>
   <body>
     <div class="container">
       <div class="inner-container">
-        <header></header>
-        <main></main>
-        <footer></footer>
+        <header class="header">
+          <h1 class="header__heading">Simple, traffic-based pricing</h1>
+          <p class="header__text">
+            Sign-up for our 30-day trial. No credit card required.
+          </p>
+        </header>
+        <main class="main">
+          <div class="card">
+            <div class="card__pageviews"><span>100K</span>Pageviews</div>
+            <div class="card__slider"><div class="card__sliderBtn"></div></div>
+            <div class="card__pricing"><span>$16.00</span> / month</div>
+            <div class="card__billing">
+              Monthly Billing
+              <div class="card__toggle"></div>
+              Yearly Billing
+              <div class="card__discount">-25%</div>
+            </div>
+            <hr />
+            <div class="card__list">
+              <li>Unlimited websites</li>
+              <li>100% data ownership</li>
+              <li>Email reports</li>
+            </div>
+            <div class="card__trialBtn">Start my trial</div>
+          </div>
+        </main>
       </div>
     </div>
 
