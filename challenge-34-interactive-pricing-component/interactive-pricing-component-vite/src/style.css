@@ -44,6 +44,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 0 1.5rem;
+  border: 1px solid red;
 }
 
 .header {
@@ -72,13 +73,14 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-bottom: 5rem;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 2.5rem;
   width: 100%;
   border-radius: 1rem;
   background-color: var(--white);
@@ -177,11 +179,32 @@ body {
   color: var(--light-red);
 }
 
-hr {
+.card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-top: 1px solid var(--light-grayish-blue);
   width: 100%;
-  height: 1px;
-  color: var(--light-grayish-blue);
-  margin: 1rem 0;
+  margin-top: 1rem;
+  padding: 1.5rem 0 2rem;
+}
+
+.card__list-item {
+  color: var(--grayish-blue);
+  font-size: 0.9rem;
+}
+
+.card__list-item::before {
+  content: url("../public/images/icon-check.svg");
+  margin-right: 1rem;
+}
+
+.card__trialBtn {
+  font-size: 0.9rem;
+  padding: 0.75rem 2.5rem;
+  border-radius: 1.5rem;
+  background-color: var(--dark-desaturated-blue);
+  color: var(--pale-blue);
 }
 
 .card__list {
