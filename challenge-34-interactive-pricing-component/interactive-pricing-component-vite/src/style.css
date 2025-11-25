@@ -1,7 +1,7 @@
 :root {
   /* Primary Colors */
   --soft-cyan: hsl(174, 77%, 80%); /* Full Slider Bar */
-  --soft-cyan-shadow: hsla(174, 77%, 80%, 0.2); /* Slide Shadow */
+  --soft-cyan-shadow: hsla(174, 77%, 80%, 0.35); /* Slide Shadow */
   --strong-cyan: hsl(174, 86%, 45%); /* Slider bg */
   --light-grayish-red: hsl(14, 92%, 95%); /* Discount bg */
   --light-red: hsl(15, 100%, 70%); /* Discount Text */
@@ -44,7 +44,6 @@ body {
   align-items: center;
   text-align: center;
   padding: 0 1.5rem;
-  border: 1px solid red;
 }
 
 .header {
@@ -105,11 +104,11 @@ body {
   width: calc(100% - 3rem);
   border-radius: 4px;
   background-color: var(--light-grayish-blue);
+  z-index: 1;
 }
 
 .card__sliderBtn {
   position: absolute;
-  left: 50%;
   top: 50%;
   height: 40px;
   width: 40px;
@@ -118,8 +117,14 @@ body {
   background-image: url("./images/icon-slider.svg");
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 0 12px 24px var(--soft-cyan-shadow);
+  box-shadow: 0 14px 28px hsla(174, 77%, 40%, 0.4);
   transform: translate(-50%, -50%);
+  cursor: grab;
+  z-index: 2;
+}
+
+.card__sliderBtn:active {
+  cursor: grabbing;
 }
 
 .card__pricing {
@@ -150,6 +155,7 @@ body {
   width: 42px;
   border-radius: 11px;
   background-color: var(--toggle-bg);
+  cursor: pointer;
 }
 
 .card__toggle::after {
@@ -162,6 +168,18 @@ body {
   border-radius: 50%;
   background-color: var(--white);
   transform: translate(30%, -50%);
+}
+
+.active {
+  background-color: var(--strong-cyan);
+}
+
+.active::after {
+  transform: translate(170%, -50%);
+}
+
+.card__toggle:hover {
+  background-color: var(--strong-cyan);
 }
 
 .card__discount {
@@ -205,6 +223,11 @@ body {
   border-radius: 1.5rem;
   background-color: var(--dark-desaturated-blue);
   color: var(--pale-blue);
+}
+
+.card__trialBtn:hover {
+  color: var(--white);
+  cursor: pointer;
 }
 
 .card__list {
