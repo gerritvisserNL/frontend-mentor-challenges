@@ -10,6 +10,13 @@ toggle.addEventListener("click", () => {
 const slider = document.querySelector(".card__slider");
 const sliderBtn = document.querySelector(".card__sliderBtn");
 
+// Startposition slider
+window.addEventListener("load", () => {
+  const startPercent = 50;
+  sliderBtn.style.left = `${startPercent}%`;
+  updateSliderBackground(startPercent);
+});
+
 let isDragging = false;
 
 sliderBtn.addEventListener("mousedown", () => {
