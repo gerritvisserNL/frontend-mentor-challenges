@@ -19,7 +19,8 @@ window.addEventListener("load", () => {
 
 let isDragging = false;
 
-sliderBtn.addEventListener("mousedown", (e) => {
+// Mouse events
+sliderBtn.addEventListener("mousedown", () => {
   isDragging = true;
 });
 
@@ -29,22 +30,39 @@ document.addEventListener("mouseup", () => {
 
 document.addEventListener("mousemove", (e) => {
   if (!isDragging) return;
+  handleMove(e.clientX);
+});
 
-  // position
+// Touch events
+sliderBtn.addEventListener("touchstart", (e) => {
+  isDragging = true;
+});
+
+document.addEventListener("touchend", () => {
+  isDragging = false;
+});
+
+document.addEventListener("touchmove", (e) => {
+  if (!isDragging) return;
+  handleMove(e.touches[0].clientX);
+});
+
+// Function to calculate position
+const handleMove = (clientX) => {
   const rect = slider.getBoundingClientRect();
-  let x = e.clientX - rect.left;
+  let x = clientX - rect.left;
 
-  // set borders
+  // borders
   x = Math.max(0, Math.min(x, rect.width));
 
-  // percentage
+  // percent
   const percent = (x / rect.width) * 100;
 
   // sliderBtn position
   sliderBtn.style.left = `${percent}%`;
 
   updateBackgroundSlider(percent);
-});
+};
 
 const updateBackgroundSlider = (percent) => {
   slider.style.background = `linear-gradient(to right,
