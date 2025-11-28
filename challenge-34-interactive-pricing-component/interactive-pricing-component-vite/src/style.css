@@ -31,7 +31,7 @@ body {
   display: flex;
   justify-content: center;
   min-height: 100dvh;
-  background-image: url("./images/bg-pattern.svg");
+  background-image: url("/images/bg-pattern.svg");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 1250px;
@@ -50,7 +50,7 @@ body {
   margin: 4rem 0 2rem;
   padding-top: 2rem;
   width: 100%;
-  background-image: url("./images/pattern-circles.svg");
+  background-image: url("/images/pattern-circles.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -113,7 +113,7 @@ body {
   width: 40px;
   border-radius: 50%;
   background-color: var(--strong-cyan);
-  background-image: url("./images/icon-slider.svg");
+  background-image: url("/images/icon-slider.svg");
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 14px 28px hsla(174, 77%, 40%, 0.4);
@@ -216,7 +216,7 @@ body {
 }
 
 .card__list-item::before {
-  content: url("../public/images/icon-check.svg");
+  content: url("/images/icon-check.svg");
   margin-right: 1rem;
 }
 
@@ -242,7 +242,7 @@ body {
     display: flex;
     justify-content: center;
     min-height: 100dvh;
-    background-image: url("./images/bg-pattern.svg");
+    background-image: url("/images/bg-pattern.svg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100% auto;
