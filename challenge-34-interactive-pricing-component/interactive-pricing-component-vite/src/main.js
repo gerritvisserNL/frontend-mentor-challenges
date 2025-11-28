@@ -10,16 +10,16 @@ toggle.addEventListener("click", () => {
 const slider = document.querySelector(".card__slider");
 const sliderBtn = document.querySelector(".card__sliderBtn");
 
-// Startposition slider
+// startposition slider
 window.addEventListener("load", () => {
   const startPercent = 50;
   sliderBtn.style.left = `${startPercent}%`;
-  updateSliderBackground(startPercent);
+  updateBackgroundSlider(startPercent);
 });
 
 let isDragging = false;
 
-sliderBtn.addEventListener("mousedown", () => {
+sliderBtn.addEventListener("mousedown", (e) => {
   isDragging = true;
 });
 
@@ -30,27 +30,24 @@ document.addEventListener("mouseup", () => {
 document.addEventListener("mousemove", (e) => {
   if (!isDragging) return;
 
+  // position
   const rect = slider.getBoundingClientRect();
-  let x = e.clientX - rect.left; // position inside slider
+  let x = e.clientX - rect.left;
 
-  // keep between borders
+  // set borders
   x = Math.max(0, Math.min(x, rect.width));
 
-  // calculate percentage
+  // percentage
   const percent = (x / rect.width) * 100;
 
-  // move button
+  // sliderBtn position
   sliderBtn.style.left = `${percent}%`;
 
-  updateSliderBackground(percent);
+  updateBackgroundSlider(percent);
 });
 
-const updateSliderBackground = (percent) => {
-  slider.style.background = `
-    linear-gradient(
-      to right,
-      hsl(174, 86%, 45%) ${percent}%,
-      hsl(224, 65%, 95%) ${percent}%
-    )
-  `;
+const updateBackgroundSlider = (percent) => {
+  slider.style.background = `linear-gradient(to right,
+   hsl(174, 86%, 45%) ${percent}%,
+   hsl(224, 65%, 95%) ${percent}%)`;
 };
