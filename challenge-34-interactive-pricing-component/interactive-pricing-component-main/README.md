@@ -17,7 +17,7 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://www.gerritvisser.nl/frontendmentor/challenges/34-interactive-pricing-component)
+- Live Site URL: [https://www.gerritvisser.nl/frontendmentor/challenges/34-interactive-pricing-component]
 
 ## My process
 
@@ -49,14 +49,17 @@ const percent = (x / rect.width) \* 100;
 sliderBtn.style.left = `${percent}%`;
 });
 
---
+---
+
 const rect = slider.getBoundingClientRect();
 This retrieves all information about the slider’s position and size.
 
 rect contains among other things:
 rect.left: the distance from the slider to the left side of the screen
 rect.width: the width of the slider
---
+
+---
+
 let x = e.clientX - rect.left;
 e.clientX is the horizontal mouse position on the screen.
 By subtracting rect.left, you get the mouse position inside the slider itself.
@@ -65,18 +68,24 @@ Example:
 The slider starts at 300px from the left
 The mouse is at 450px
 450 minus 300 equals 150px inside the slider
---
+
+---
+
 x = Math.max(0, Math.min(x, rect.width));
 This ensures that x can never fall outside the slider.
 
 Math.min(x, rect.width) prevents x from becoming larger than the slider’s width
 Math.max(0, ...) prevents x from becoming smaller than 0
---
+
+---
+
 const percent = (x / rect.width) \* 100;
 You now have a value in pixels, but the button uses left: xx%.
 By dividing x by rect.width you get a value between 0 and 1.
 Multiplying by 100 turns it into a percentage.
---
+
+---
+
 sliderBtn.style.left = `${percent}%`;
 This places the button at the correct position based on the percentage.
 
