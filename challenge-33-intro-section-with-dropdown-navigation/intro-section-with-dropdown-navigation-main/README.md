@@ -17,7 +17,7 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://www.gerritvisser.nl/frontendmentor/challenges/33-intro-section-with-dropdown-navigation)
+- Live Site URL: [https://www.gerritvisser.nl/frontendmentor/challenges/33-intro-section-with-dropdown-navigation]
 
 ## My process
 
@@ -33,7 +33,7 @@ In this challenge, my main focus was the JavaScript functionality rather than pi
 
 Event listeners on multiple elements: querySelectorAll returns a NodeList, so you need to loop through it with .forEach to attach addEventListener to each element individually.
 
-Dropdown menus: You can check if a <ul> is hidden using querySelector("ul.hidden").
+Dropdown menus: You can check if a `<ul>` is hidden using querySelector("ul.hidden").
 
 Overlay animations: For fade-in and fade-out effects, use opacity and pointer-events. Avoid using display: none or visibility: hidden for elements you want to animate, as these cannot be transitioned. Toggling a .visible class is the most effective approach.
 
@@ -44,5 +44,5 @@ Inline styles: When adjusting styles dynamically, use the proper syntax like .st
 ## Author
 
 - Website - [Gerrit Visser](https://www.gerritvisser.nl)
-- LinkedIn - [@yourusername](https://www.linkedin.com/in/gerritvissernl/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/gerritvisserNL)
+- LinkedIn - [gerritvissernl](https://www.linkedin.com/in/gerritvissernl/)
+- GitHub - [gerritvisserNL](https://www.github.com/gerritvisserNL)
