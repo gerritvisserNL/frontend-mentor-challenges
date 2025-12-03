@@ -21,7 +21,7 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 
 ### Links
 
-- Live Site URL: [https://www.gerritvisser.nl/frontendmentor/challenges/34-interactive-pricing-component]
+- Live Site URL: [https://www.gerritvisser.nl/frontendmentor/challenges/35-coding-bootcamp-testimonials-slider]
 
 ## My process
 
