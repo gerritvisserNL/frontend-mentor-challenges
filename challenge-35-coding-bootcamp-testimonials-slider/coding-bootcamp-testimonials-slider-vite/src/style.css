@@ -8,6 +8,8 @@ html {
 }
 
 body {
+  display: flex;
+  justify-content: center;
   font-family: "Inter", serif;
   font-weight: 300;
 }
@@ -23,6 +25,7 @@ body {
   background-size: contain;
   overflow: hidden;
   min-width: 320px;
+  max-width: 700px;
 }
 
 .slider__track {
@@ -54,7 +57,8 @@ body {
   margin: 1.6rem 0;
   width: 68vw;
   border-radius: 7px;
-  /* box-shadow: 8px 8px 16px var(--blue-950); */
+  box-shadow: 0px 30px 15px -7px rgba(0, 0, 0, 0.1),
+    0px 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .slider__button-wrapper {
@@ -72,6 +76,7 @@ body {
   height: 40px;
   border: none;
   background-color: white;
+  cursor: pointer;
 }
 
 .slider__button--prev {
@@ -80,10 +85,16 @@ body {
   border-bottom-left-radius: 20px;
 }
 
+.slider__button--prev:hover,
+.slider__button--next:hover {
+  background-color: var(--gray-400);
+}
+
 .slider__button--next {
   background-image: url("img/icon-next.svg");
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  margin-left: -1px;
 }
 
 .slider__icon-prev {
@@ -109,7 +120,7 @@ body {
 }
 
 .slider__text {
-  font-size: clamp(0.6rem, calc(5vw - 1rem), 3rem);
+  font-size: 0.6rem;
   color: var(--blue-950);
   padding: 0 0.5rem;
 }
@@ -144,38 +155,72 @@ body {
 }
 
 @media (min-width: 700px) {
+  .slider__photo {
+    max-width: 480px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
   .slider {
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 700px;
-    background-color: lime;
+    max-width: unset;
+    background-position: center calc(100% + 7rem);
   }
 
   .slider__slide {
+    position: relative;
     flex-direction: row-reverse;
   }
 
   .slider__img-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
     background-size: contain;
+    background-position: right;
+
+    margin: 0 2rem;
   }
 
   .slider__photo {
+    position: relative;
+    right: 2.2rem;
     width: 542px;
     height: auto;
   }
 
+  .slider__button-wrapper {
+    left: unset;
+    right: 12rem;
+  }
   .slider__button {
     display: block;
   }
 
+  .slider__text-wrapper {
+    position: absolute;
+    top: 53%;
+    right: 17.5rem;
+    margin: unset;
+    width: 16rem;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
   .slider__text {
     text-align: left;
-    background-color: blue;
+    padding: unset;
+    font-size: 0.8rem;
   }
 
   .slider__pattern-quotes {
-    left: 15%;
+    width: 2.5rem;
+    top: -15%;
+    left: 24%;
   }
 
   .slider__info {
@@ -183,6 +228,5 @@ body {
     justify-content: flex-start;
     gap: 0.25rem;
     width: 100%;
-    background-color: red;
   }
 }

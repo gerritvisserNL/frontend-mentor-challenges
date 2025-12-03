@@ -8,9 +8,6 @@ const prevBtns = document.querySelectorAll(".slider__button--prev");
 
 let currentIndex = 0;
 
-// Make each slide take 100% of the container width
-slides.forEach((slide) => (slide.style.minWidth = "100%"));
-
 // Function to show a specific slide
 const showSlide = (index) => {
   // Wrap around if index is out of bounds
