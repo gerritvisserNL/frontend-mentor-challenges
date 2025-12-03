@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100dvh;
-  background-image: url("img/pattern-curve.svg");
+  background-image: url("../public/img/pattern-curve.svg");
   background-repeat: no-repeat;
   background-position: center calc(100% + 0.75rem);
   background-size: contain;
@@ -80,7 +80,7 @@ body {
 }
 
 .slider__button--prev {
-  background-image: url("img/icon-prev.svg");
+  background-image: url("../public/img/icon-prev.svg");
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -91,7 +91,7 @@ body {
 }
 
 .slider__button--next {
-  background-image: url("img/icon-next.svg");
+  background-image: url("../public/img/icon-next.svg");
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-left: -1px;
