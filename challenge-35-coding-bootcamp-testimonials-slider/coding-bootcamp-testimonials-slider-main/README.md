@@ -37,7 +37,21 @@ In this challenge, my main focus was the JavaScript functionality rather than pi
 
 ---
 
-To be continued...
+I built a slider using JavaScript and learned a lot by going through the code step by step.
+
+- I selected the container that holds all slides using document.querySelector(".slider\_\_track").
+
+- I converted its children into an array with Array.from(track.children) so I could easily work with each slide individually—this was new to me.
+
+- I selected all the “next” and “previous” buttons using document.querySelectorAll to make navigation possible.
+
+- I created a currentIndex variable to track the active slide. Using it in combination with modulo arithmetic to wrap around the slider was a clever technique I hadn’t seen before.
+
+- I defined the showSlide function, which moves the slider using track.style.transform = translateX(...) based on currentIndex.
+
+- I added click event listeners to the buttons to call showSlide with the next or previous index.
+
+At first, I used ChatGPT to write the code because I was stuck. Then I went through it line by line until I fully understood it. Finally, I deleted the original code and rewrote it myself, which helped me internalize the logic and practice DOM manipulation, event handling, and slider mechanics.
 
 ## Author
 
