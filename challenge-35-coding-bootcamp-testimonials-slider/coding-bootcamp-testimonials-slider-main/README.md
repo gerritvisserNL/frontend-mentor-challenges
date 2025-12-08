@@ -39,7 +39,7 @@ In this challenge, my main focus was the JavaScript functionality rather than pi
 
 I built a slider using JavaScript and learned a lot by going through the code step by step.
 
-- I selected the container that holds all slides using document.querySelector(".slider\_\_track").
+- I selected the container that holds all slides using `document.querySelector(".slider__track")`.
 
 - I converted its children into an array with Array.from(track.children) so I could easily work with each slide individually—this was new to me.
 
