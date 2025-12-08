@@ -1,0 +1,174 @@
+:root {
+  /* Primary Colors */
+  --color-primary-green-500: hsl(163, 72%, 41%);
+  --color-primary-red-500: hsl(356, 69%, 56%);
+  --color-facebook-blue-600: hsl(208, 92%, 53%);
+  --color-twitter-blue-500: hsl(203, 89%, 53%);
+  --color-instagram-gradient: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%),
+    hsl(5, 77%, 71%),
+    hsl(329, 70%, 58%)
+  );
+  --color-youtube-red-700: hsl(348, 97%, 39%);
+
+  /* Neutral Colors - Light Theme */
+  --color-bg: hsl(0, 100%, 100%);
+  --color-top-bg-pattern: hsl(225, 100%, 98%);
+  --color-card-bg: hsl(227, 47%, 96%);
+  --color-text: hsl(228, 12%, 44%);
+  --color-text-heading: hsl(230, 17%, 14%);
+  --color-toggle: hsl(230, 22%, 74%);
+}
+
+.dark {
+  --color-bg: hsl(230, 17%, 14%);
+  --color-top-bg-pattern: hsl(232, 19%, 15%);
+  --color-card-bg: hsl(228, 28%, 20%);
+  --color-text: hsl(230, 22%, 74%);
+  --color-text-heading: hsl(0, 100%, 100%);
+  --color-toggle: linear-gradient(
+    to right,
+    hsl(210, 79%, 56%),
+    hsl(146, 68%, 55%)
+  );
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--color-bg);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 100dvh;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  width: 100%;
+  padding: 1.5rem;
+  border: 1px solid red;
+}
+
+.header__heading {
+  font-size: 1.7rem;
+  color: var(--color-text-heading);
+}
+
+.header__text {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--color-text);
+  width: 100%;
+}
+
+.header__theme-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.header__theme-wrapper span {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.header__theme-toggle {
+  position: relative;
+  width: 3.5rem;
+  height: 1.6rem;
+  border-radius: 1rem;
+  background-color: var(--color-toggle);
+}
+
+.header__theme-toggle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 3px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: var(--color-bg);
+  transform: translateY(-50%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  /* border: 2px solid blue; */
+}
+
+.cards {
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-top: 4px solid var(--color-facebook-blue-600);
+  border-radius: 4px;
+  background: var(--color-card-bg);
+}
+
+.card__social {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.card__icon--facebook {
+  color: var(--color-facebook-blue-600);
+}
+
+.card__account {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.card__amount {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.card__label {
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.card__change {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin: 2rem 0;
+  font-weight: 700;
+}
+
+.card__change--up {
+  color: var(--color-primary-green-500);
+}
+
+.card__change-amount {
+}
