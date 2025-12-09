@@ -21,7 +21,16 @@
   --color-toggle: hsl(230, 22%, 74%);
 }
 
-.dark {
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--color-bg);
+}
+
+body[data-theme="dark"] {
   --color-bg: hsl(230, 17%, 14%);
   --color-top-bg-pattern: hsl(232, 19%, 15%);
   --color-card-bg: hsl(228, 28%, 20%);
@@ -32,15 +41,6 @@
     hsl(210, 79%, 56%),
     hsl(146, 68%, 55%)
   );
-}
-
-html {
-  font-size: 14px;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  background: var(--color-bg);
 }
 
 .container {
@@ -89,7 +89,9 @@ body {
   width: 3.5rem;
   height: 1.6rem;
   border-radius: 1rem;
+  border: none;
   background-color: var(--color-toggle);
+  cursor: pointer;
 }
 
 .header__theme-toggle::before {
