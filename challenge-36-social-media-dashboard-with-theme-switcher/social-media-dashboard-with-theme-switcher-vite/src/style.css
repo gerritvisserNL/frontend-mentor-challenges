@@ -90,20 +90,34 @@ body[data-theme="dark"] {
   height: 1.6rem;
   border-radius: 1rem;
   border: none;
-  background-color: var(--color-toggle);
+  background: var(--color-toggle);
   cursor: pointer;
+
+  --knob-left: auto;
+  --knob-right: 3px;
 }
 
 .header__theme-toggle::before {
   content: "";
   position: absolute;
   top: 50%;
-  right: 3px;
+  left: var(--knob-left);
+  right: var(--knob-right);
   width: 17px;
   height: 17px;
   border-radius: 50%;
   background-color: var(--color-bg);
   transform: translateY(-50%);
+}
+
+body[data-theme="light"] .header__theme-toggle {
+  --knob-left: auto;
+  --knob-right: 3px;
+}
+
+body[data-theme="dark"] .header__theme-toggle {
+  --knob-left: 3px;
+  --knob-right: auto;
 }
 
 main {
